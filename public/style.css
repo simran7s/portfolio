@@ -302,7 +302,7 @@ button:active {
     margin-bottom: 0;
 }
 
-/* Created to have top: 15rem  spacing*/
+/* Created to have top: 15rem  spacing (allows us to see wave effect)*/
 .divider {
     height: 15rem;
 }
@@ -347,8 +347,7 @@ button:active {
     grid-template-areas:
         "info picture"
         "mid mid"
-        "skills skills"
-    ;
+        "skills skills";
 }
 
 .card-info {
@@ -378,12 +377,25 @@ button:active {
 }
 
 .card-middle {
-    /* background-color: cadetblue; */
     grid-area: mid;
 }
 
+.middle-grid {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    padding: 1rem 5px;
+}
+
+.middle-grid h4 {
+    font-size: 2rem;
+}
+
+.work-links a i {
+    font-size: 2rem;
+}
+
 .card-skills {
-    /* background-color: chartreuse; */
+
     grid-area: skills;
 
     display: grid;
@@ -422,15 +434,21 @@ button:active {
     align-items: center;
 }
 
-.middle-grid {
-    display: grid;
-    grid-template-columns: 50% 50%;
 
-    padding: 1rem 5px;
-}
 
 
 .word-card-grid {
     display: grid;
     grid-template-columns: repeat(auto, 1fr);
+}
+
+/* ************************************************** */
+/* ****************** CONTACT PAGE ********************* */
+/* ************************************************** */
+
+.landing-mobile-waves {
+    background-image: url("./images/mobile\ -900x675.svg");
+    position: absolute;
+    bottom: 0%;
+    left: 0%;
 }

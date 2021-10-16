@@ -4,7 +4,7 @@ function Anchor(props) {
     const { href, text } = props
     return (
 
-        <a href={`#${href}`} className="anchor">{text}</a>
+        <a href={`${href}`} className="anchor">{text}</a>
     )
 }
 

@@ -2,12 +2,15 @@ import React from 'react'
 import Anchor from '../General/Anchor'
 import Skill from './Skill'
 
-function WorkCard() {
+function WorkCard(props) {
+
+    const { name, desc, img, site_url, code_url, skills } = props
+
     return (
         <div className="work-card">
             <div className="card-info">
-                <h3>Blog Website</h3>
-                <p>A Pokedex app created using the PokeAPI.</p>
+                <h3>{name}</h3>
+                <p>{desc}</p>
             </div>
             <div className="card-picture">
 
@@ -17,19 +20,22 @@ function WorkCard() {
                 <div className="middle-grid">
                     <h4>Skills Used:</h4>
                     <div className="work-links">
-                        <Anchor text="View Site" />
-                        <Anchor text="View Code" />
+                        <Anchor href={site_url} text="View Site" />
+                        <Anchor href={code_url} text="View Code" />
+                        {/* <Anchor href={site_url} text={<i class="fas fa-external-link-alt"></i>} /> */}
+                        {/* <Anchor href={code_url} text={<i class="fab fa-github"></i>} /> */}
+
                     </div>
                 </div>
             </div>
 
             <div className="card-skills">
-                <Skill text="HTML" />
-                <Skill text="CSS" />
-                <Skill text="JavaScript" />
-                <Skill text="React" />
-                <Skill text="Node.js" />
-                <Skill text="JSON" />
+                <Skill text={skills.skill1} />
+                <Skill text={skills.skill2} />
+                <Skill text={skills.skill3} />
+                <Skill text={skills.skill4} />
+                <Skill text={skills.skill5} />
+                <Skill text={skills.skill6} />
             </div>
 
         </div>

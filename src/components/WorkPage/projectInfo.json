@@ -22,7 +22,7 @@
     },
     {
       "name": "Secrets App",
-      "desc": "An app where you can anonymously post your secret for everyone to see. Makes uses of OAuth2.0 to include sign up with Google feature",
+      "desc": "An app where you can anonymously post your secret for everyone to see.",
       "img": null,
       "site_url": "https://arcane-wildwood-95606.herokuapp.com/",
       "code_url": "https://github.com/simran7s/SecretsApp",
@@ -62,7 +62,7 @@
     },
     {
       "name": "Blog Website",
-      "desc": "Just a website where I make blog posts. Since, I'm nice I'll let you post as well. Just know only I can delete your post :)",
+      "desc": "Just a blog website with a backend",
       "img": null,
       "site_url": "https://frozen-journey-02026.herokuapp.com/",
       "code_url": "https://github.com/simran7s/BlogWebsite",
@@ -81,8 +81,8 @@
       }
     },
     {
-      "name": "Repeat After Me",
-      "desc": "Have good memory? Let's see if you can get past level 25 of this game",
+      "name": "Repeat Game",
+      "desc": "Copy the pattern game.",
       "img": null,
       "site_url": "https://simran7s.github.io/RepeatAfterMeGame/",
       "code_url": "https://github.com/simran7s/RepeatAfterMeGame/",
@@ -110,9 +110,9 @@
         "skill1": "HTML",
         "skill2": "CSS",
         "skill3": "BootStrap",
-        "skill4": "Media Queries",
+        "skill4": "Responsiveness",
         "skill5": "Wireframing",
-        "skill6": ""
+        "skill6": "Figma"
       },
       "search_filter": {
         "vanilla": true,
@@ -136,13 +136,13 @@
       },
       "search_filter": {
         "vanilla": false,
-        "node": false,
-        "react": true
+        "node": true,
+        "react": false
       }
     },
     {
       "name": "KeyDrum",
-      "desc": "Have you ever wanted to play the drums ...with your keyboard? We'll this app lets you do just that.",
+      "desc": "Have you ever wanted to play the drums ...with your keyboard?",
       "img": null,
       "site_url": "https://simran7s.github.io/KeyDrum/",
       "code_url": "https://github.com/simran7s/KeyDrum/",
@@ -171,8 +171,8 @@
         "skill2": "HTML/CSS",
         "skill3": "JavaScript",
         "skill4": "SVGs",
-        "skill5": "Mobile-first Design",
-        "skill6": "Wireframing"
+        "skill5": "Figma",
+        "skill6": ""
       },
       "search_filter": {
         "vanilla": false,
