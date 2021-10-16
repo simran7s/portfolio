@@ -1,4 +1,5 @@
 import React from 'react'
+import Anchor from '../General/Anchor'
 
 function Work() {
     return (
@@ -16,8 +17,39 @@ function Work() {
                     </ul>
 
                     <div className="work-card">
-                        <h4>Pokemon</h4>
+                        <div className="card-info">
+                            <h3>Blog Website</h3>
+                            <p>A Pokedex app created using the PokeAPI.</p>
+                        </div>
+                        <div className="card-picture">
+
+                        </div>
+
+                        <div className="card-middle">
+                            <div className="middle-grid">
+                                <h4>Skills Used:</h4>
+                                <div className="work-links">
+                                    <Anchor text="View Site" />
+                                    <Anchor text="View Code" />
+                                </div>
+                            </div>
+                        </div>
+
+                        <div className="card-skills">
+                            <div className="card-skill">HTML</div>
+                            <div className="card-skill">CSS</div>
+                            <div className="card-skill">JavaScript</div>
+                            <div className="card-skill">React</div>
+                            <div className="card-skill">NodeJS</div>
+                            <div className="card-skill">JSON</div>
+                        </div>
+
                     </div>
+
+
+
+
+
                 </div>
             </section>
         </>

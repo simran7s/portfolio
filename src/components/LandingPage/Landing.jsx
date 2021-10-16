@@ -16,8 +16,9 @@ function Landing() {
                     <h3>A Full Stack Developer</h3>
                 </div>
             </div>
-
-            <Anchor href="contact" text="Get In Touch" />
+            <div className="spacer landing-mobile-waves">
+                <Anchor href="contact" text="Get In Touch" />
+            </div>
 
         </div>
     )
