@@ -275,15 +275,17 @@ button:active {
 
 
 /* ************************************************** */
-/* ****************** ABOUT PAGE ********************* */
+/* ****************** WORK PAGE ********************* */
 /* ************************************************** */
 
 #work {
     background-color: var(--dark);
-    height: 100vh;
     width: 100vw;
     color: var(--light);
     position: relative;
+
+
+    height: calc(100% + 15rem);
 }
 
 .black-waves {
@@ -295,9 +297,14 @@ button:active {
 
 #work .container {
     position: relative;
-    top: 15rem;
+    /* top: 15rem; */
     margin-top: 0;
     margin-bottom: 0;
+}
+
+/* Created to have top: 15rem  spacing*/
+.divider {
+    height: 15rem;
 }
 
 #work h3 {
@@ -420,4 +427,10 @@ button:active {
     grid-template-columns: 50% 50%;
 
     padding: 1rem 5px;
+}
+
+
+.word-card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto, 1fr);
 }
