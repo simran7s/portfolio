@@ -272,14 +272,61 @@ button:active {
     margin-bottom: 2rem;
 }
 
-.black-waves {
-    background-image: url("./images/about2workTransitionWaves-Mobile-3-4.svg");
-    position: relative;
-    /* bottom: 7rem; */
-}
+
+
+/* ************************************************** */
+/* ****************** ABOUT PAGE ********************* */
+/* ************************************************** */
 
 #work {
     background-color: var(--dark);
     height: 100vh;
     width: 100vw;
+    color: var(--light);
+    position: relative;
+}
+
+.black-waves {
+    background-image: url("./images/about2workTransitionWaves-Mobile-3-4.svg");
+    position: absolute;
+    top: 0%;
+    left: 0%;
+}
+
+#work .container {
+    position: relative;
+    top: 15rem;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+#work h3 {
+    margin-bottom: 1rem;
+}
+
+.work-nav {
+    list-style: none;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    border: 3px solid var(--light);
+    border-left: none;
+    border-right: none;
+    padding: 1rem 0rem;
+}
+
+.work-nav .work-nav-item {
+    font-size: 1.6rem;
+}
+
+.work-card {
+    width: auto;
+    height: 250px;
+    background-color: #3F5768;
+    padding: 2rem;
+    border-radius: 15px;
+    margin-top: 2rem;
 }
