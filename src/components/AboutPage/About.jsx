@@ -15,16 +15,27 @@ function About() {
                     <h4>Skills</h4>
                     <div className="skills">
                         <SkillCapsule text="HTML/CSS" />
-                        <SkillCapsule text="HTML/CSS" />
-                        <SkillCapsule text="HTML/CSS" />
-                        <SkillCapsule text="HTML/CSS" />
-                        <SkillCapsule text="HTML/CSS" />
-                        <SkillCapsule text="HTML/CSS" />
+                        <SkillCapsule text="JavaScript" />
+                        <SkillCapsule text="React" />
+                        <SkillCapsule text="SASS" />
+                        <SkillCapsule text="jQuery" />
+                        <SkillCapsule text="REST APIs" />
+                        <SkillCapsule text="Node.js" />
+                        <SkillCapsule text="Express.js" />
+                        <SkillCapsule text="Mongoose" />
+                        <SkillCapsule text="EJS" />
                     </div>
                 </div>
 
+                <div className="socials">
+                    <a href="https://github.com/simran7s" target="_blank" rel="noopener noreferrer">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/simran-sandhu-0b7434195/" target="_blank" rel="noopener noreferrer">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                </div>
             </div>
-
         </section>
     )
 }
