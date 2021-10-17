@@ -10,7 +10,7 @@
         "skill1": "React",
         "skill2": "HTML/CSS",
         "skill3": "JavaScript",
-        "skill4": "Async/Await",
+        "skill4": "Async",
         "skill5": "APIs",
         "skill6": ""
       },
@@ -110,9 +110,9 @@
         "skill1": "HTML",
         "skill2": "CSS",
         "skill3": "BootStrap",
-        "skill4": "Responsiveness",
+        "skill4": "Figma",
         "skill5": "Wireframing",
-        "skill6": "Figma"
+        "skill6": ""
       },
       "search_filter": {
         "vanilla": true,

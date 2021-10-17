@@ -20,11 +20,10 @@ function WorkCard(props) {
                 <div className="middle-grid">
                     <h4>Skills Used:</h4>
                     <div className="work-links">
-                        <Anchor href={site_url} text="View Site" />
-                        <Anchor href={code_url} text="View Code" />
-                        {/* <Anchor href={site_url} text={<i class="fas fa-external-link-alt"></i>} /> */}
-                        {/* <Anchor href={code_url} text={<i class="fab fa-github"></i>} /> */}
-
+                        {/* <Anchor href={site_url} text="View Site" /> */}
+                        {/* <Anchor href={code_url} text="View Code" /> */}
+                        <Anchor href={site_url} text={<i class="fas fa-external-link-alt"></i>} />
+                        <Anchor href={code_url} text={<i class="fab fa-github"></i>} />
                     </div>
                 </div>
             </div>

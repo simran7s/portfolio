@@ -45,7 +45,7 @@ function Work() {
             </div>
             <div className="container">
                 <div className="divider"></div>
-                <h3>My Work</h3>
+                <h3>Projects</h3>
                 <ul className="work-nav">
                     <li className="work-nav-item"
                         onClick={() => {
@@ -66,8 +66,9 @@ function Work() {
                 </ul>
                 <div className="word-card-grid">
 
-                    {projects.map((project) => (
+                    {projects.map((project, index) => (
                         <WorkCard
+                            key={index}
                             name={project.name}
                             desc={project.desc}
                             img={project.img}

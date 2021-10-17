@@ -3,11 +3,12 @@ import Anchor from '../General/Anchor'
 import Navbar from './Navbar'
 
 function Landing() {
-    return (
-        <div className="landing">
 
+    return (
+        <div className="landing" id="home">
+
+            <Navbar />
             <div className="container">
-                <Navbar />
 
                 <div className="landing-text">
                     <h2>Hi.</h2>

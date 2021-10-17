@@ -30,6 +30,7 @@ body {
     font-size: 10px;
     overflow-x: hidden;
     background-color: var(--light);
+    scroll-behavior: smooth;
 }
 
 * {
@@ -101,7 +102,7 @@ button:active {
     opacity: 0.9;
 }
 
-
+/*  */
 
 
 /* ****************************** */
@@ -119,18 +120,29 @@ button:active {
     margin: var(--default-margin);
 }
 
-/* NAVBAR */
+/* ****************************** */
+/* NAV BAR (within landing) */
+/* ****************************** */
 
 .navbar {
+    position: fixed;
+    z-index: 1;
+    top: 0%;
+    left: 0;
+    right: 0;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    padding: var(--default-mobile-margin);
+    padding-bottom: none;
+    transition: all 0.5s ease;
 }
 
 
 .navbar nav i {
     font-size: var(--logo-mobile-circle-size);
+    color: var(--secondary);
 }
 
 /* LOGO within NAV */
@@ -151,6 +163,66 @@ button:active {
     font-size: var(--logo-mobile-text-size);
 }
 
+/* WHEN NAVBAR IS ACTIVE */
+
+.navbar.active {
+    background-color: rgba(57, 62, 70, 0.95);
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    transition: all 0.5s ease-in;
+}
+
+.navbar.active .circle {
+    background-color: var(--light);
+}
+
+.navbar.active .logo p {
+    color: var(--secondary);
+}
+
+.navbar.active nav i {
+    color: var(--light);
+}
+
+
+
+/* OVERLAY */
+.overlay {
+    display: none;
+}
+
+.overlay.active {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0%;
+    width: 100vw;
+    height: 100vh;
+    margin: auto;
+    background-color: rgba(57, 62, 70, 0.9);
+    z-index: 2;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.overlay.active a {
+    color: var(--light);
+    display: block;
+    text-decoration: none;
+    font-size: 4rem;
+}
+
+.overlay.active i {
+    color: var(--light);
+    font-size: 4rem;
+    position: absolute;
+    bottom: 1rem;
+}
+
+
 /* landing-text */
 .landing-text {
     display: flex;
@@ -158,7 +230,7 @@ button:active {
     justify-content: center;
     align-items: flex-start;
     width: 100%;
-    height: 60vh;
+    height: 70vh;
     color: var(--dark);
 }
 
@@ -200,7 +272,7 @@ button:active {
     margin-left: auto;
     margin-right: auto;
 
-    bottom: 20%;
+    bottom: 15%;
     text-align: center;
     width: 60vw;
 }
@@ -344,10 +416,13 @@ button:active {
     grid-template-rows: 5fr 2fr 3fr;
     gap: 10px;
 
-    grid-template-areas:
-        "info picture"
+    grid-template-areas: "info picture"
         "mid mid"
         "skills skills";
+}
+
+.work-card {
+    font-size: smaller;
 }
 
 .card-info {
@@ -387,7 +462,8 @@ button:active {
 }
 
 .middle-grid h4 {
-    font-size: 2rem;
+    font-size: 1.8rem;
+    margin: auto 0;
 }
 
 .work-links a i {
@@ -395,7 +471,6 @@ button:active {
 }
 
 .card-skills {
-
     grid-area: skills;
 
     display: grid;
@@ -405,27 +480,35 @@ button:active {
 }
 
 .card-skill {
-    background-color: var(--primary);
+    /* background-color: var(--primary); */
+    border: 1px solid var(--primary);
     border-radius: 15px;
     text-align: center;
 
     /* margin: auto 0; */
     padding: 0.5rem 1rem;
+    font-size: 1rem;
+}
 
-
-
+.card-skill.smaller {
+    margin: auto 0;
+    font-size: 0.9rem;
 }
 
 .work-links {
     display: flex;
     gap: 5px;
+    justify-content: space-evenly;
+    align-items: center;
     /* grid-template-columns: 50% 50%; */
 }
 
 .work-links a {
-    background-color: var(--secondary);
+    background-color: transparent;
+
+    /* border: 1px solid var(--secondary); */
+
     color: var(--light);
-    padding: 0;
     vertical-align: middle;
     font-size: 1rem;
 
@@ -434,21 +517,84 @@ button:active {
     align-items: center;
 }
 
-
-
-
 .word-card-grid {
     display: grid;
     grid-template-columns: repeat(auto, 1fr);
 }
 
 /* ************************************************** */
-/* ****************** CONTACT PAGE ********************* */
+/* ****************** CONTACT PAGE ****************** */
+/* ************************************************** */
+#contact {
+    position: relative;
+}
+
+.contact-wave {
+    background-image: url("./images/work2contactTransitionWave-Mobile3x4.svg");
+}
+
+
+#contact .container {
+    margin-top: 0;
+}
+
+/* Spacing so that content does not go under wave */
+#contact .gap {
+    height: 25vh;
+}
+
+#contact a {
+    display: block;
+    box-sizing: border-box;
+    text-decoration: none;
+    color: var(--light);
+    background-color: var(--primary);
+    padding: 0.5rem 1rem;
+    width: 100%;
+    font-family: inherit;
+    font-size: 2rem;
+    border-radius: 15px;
+    margin: 2rem 0;
+    text-align: left;
+}
+
+/* ************************************************** */
+/* ****************** Footer  ********************* */
 /* ************************************************** */
 
-.landing-mobile-waves {
-    background-image: url("./images/mobile\ -900x675.svg");
-    position: absolute;
-    bottom: 0%;
-    left: 0%;
+#footer {
+    color: var(--secondary);
+    position: sticky;
+    padding-bottom: 2rem;
+    bottom: 0;
+}
+
+#footer .socials {
+    margin: 0rem auto;
+    margin-bottom: 1rem;
+    width: 50%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#footer .socials a {
+    text-decoration: none;
+    height: 4rem;
+}
+
+#footer .socials a i {
+    color: var(--secondary);
+    font-size: 4rem;
+
+}
+
+#footer .copyright {
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+#footer .creator {
+    text-align: center;
+    font-size: 2.5rem;
 }
