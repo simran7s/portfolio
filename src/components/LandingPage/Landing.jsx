@@ -18,7 +18,7 @@ function Landing() {
                 </div>
             </div>
             <div className="spacer landing-mobile-waves">
-                <Anchor href="#contact" text="Get In Touch" />
+                <Anchor href="#contact-scrollpoint" text="Get In Touch" />
             </div>
 
         </div>

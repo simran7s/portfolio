@@ -2,10 +2,7 @@ import React from 'react'
 
 function Navbar() {
 
-
-    const hamburger = document.querySelector(".fa-bars")
-
-
+    // Toggle Overlay on and off on click
     function toggleOverlay() {
         const overlay = document.querySelector(".overlay")
         overlay.classList.toggle("active")
@@ -39,10 +36,10 @@ function Navbar() {
                 </nav>
             </div>
             <div className="overlay">
-                <a href="#home">Home</a>
-                <a href="#about">About</a>
-                <a href="#work">Projects</a>
-                <a href="#contact">Contact</a>
+                <a href="#home" onClick={toggleOverlay}>Home</a>
+                <a href="#about" onClick={toggleOverlay}>About</a>
+                <a href="#work-scrollpoint" onClick={toggleOverlay}>Projects</a>
+                <a href="#contact-scrollpoint" onClick={toggleOverlay}>Contact</a>
                 <i class="fas fa-times" onClick={toggleOverlay}></i>
             </div>
         </>

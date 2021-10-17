@@ -6,7 +6,7 @@ function Contact() {
             <div className="spacer contact-wave">
                 <div className="container">
                     <div className="gap"></div>
-                    <h3>Contact</h3>
+                    <h3 id="contact-scrollpoint">Contact</h3>
                     <p>Interested in working together, or need a website? Send me an email or a message on LinkedIn and lets discuss what we can do together.</p>
 
                     <div className="contact-links">

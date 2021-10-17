@@ -189,6 +189,7 @@ button:active {
 /* OVERLAY */
 .overlay {
     display: none;
+    transition: display 1s ease-in;
 }
 
 .overlay.active {
@@ -212,16 +213,28 @@ button:active {
     color: var(--light);
     display: block;
     text-decoration: none;
-    font-size: 4rem;
+    font-size: 5rem;
 }
 
 .overlay.active i {
     color: var(--light);
-    font-size: 4rem;
+    font-size: 10rem;
     position: absolute;
     bottom: 1rem;
 }
 
+/* SCROLL POINTS */
+#about::before {
+    height: 5rem;
+    content: '';
+    display: block;
+}
+
+#work-scrollpoint::before {
+    height: 5rem;
+    content: '';
+    display: block;
+}
 
 /* landing-text */
 .landing-text {
@@ -285,7 +298,6 @@ button:active {
 #about {
     background-color: var(--secondary);
     color: var(--light);
-
 }
 
 #about .container {
