@@ -6,20 +6,13 @@
     --light: #EEEEEE;
     --dark: #222831;
 
-    --default-padding: 7% 15%;
-    --default-margin: 5vh 7vw;
+    --default-padding: 10vh 14vw;
+    --default-margin: 10vh 14vw;
     --default-mobile-padding: 7% 15%;
     --default-mobile-margin: 5vh 7vw;
 
-    --h1-font-size: 5rem;
-    --h2-font-size: 5rem;
-    --p-font-size: 2rem;
-    --h1-mobile-font-size: 5rem;
-    --h2-mobile-font-size: 4rem;
-    --p-mobile-font-size: 2rem;
-
-    --logo-circle-size: 5rem;
-    --logo-text-size: 2rem;
+    --logo-circle-size: 7rem;
+    --logo-text-size: 3rem;
     --logo-mobile-circle-size: 4rem;
     --logo-mobile-text-size: 1.5rem;
 }
@@ -70,17 +63,6 @@ p {
     font-size: 1.8rem;
 }
 
-button {
-    z-index: 1;
-    background-color: red;
-    padding: 1rem;
-    border: 0;
-    border-radius: 15px;
-}
-
-button:active {
-    scale: 0.98;
-}
 
 .anchor {
     background-color: var(--light);
@@ -94,15 +76,17 @@ button:active {
     width: 60vw;
 }
 
+
 .anchor:active {
     scale: 0.98;
 }
 
-.anchor:hover {
-    opacity: 0.9;
+
+/* HIDE DESKTOP ELEMENTS ON MOBILE*/
+.desktop {
+    display: none;
 }
 
-/*  */
 
 
 /* ****************************** */
@@ -169,7 +153,9 @@ button:active {
     background-color: rgba(57, 62, 70, 0.95);
     padding-top: 1rem;
     padding-bottom: 1rem;
-    transition: all 0.5s ease-in;
+    box-shadow: 0 3px 20px rgba(--dark, );
+    /* transition: all 0.2s ease-in; */
+
 }
 
 .navbar.active .circle {
@@ -254,8 +240,6 @@ button:active {
     top: 5px;
 
 }
-
-
 
 /* WAVES */
 .spacer {
@@ -411,6 +395,11 @@ button:active {
 
 .work-nav .work-nav-item {
     font-size: 1.6rem;
+}
+
+.work-nav .work-nav-item.active {
+    border-top: 1px solid var(--light);
+    border-bottom: 1px solid var(--light);
 }
 
 
@@ -609,4 +598,187 @@ button:active {
 #footer .creator {
     text-align: center;
     font-size: 2.5rem;
+}
+
+
+/* Laptops and Computers */
+@media only screen and (min-width: 768px) {
+    html {
+        overflow-y: overlay
+    }
+
+    .higher-index {
+        position: relative;
+        z-index: 1;
+    }
+
+    .container {
+        margin: var(--default-margin);
+    }
+
+    /* HIDE MOBILE ELEMENTS ON DESKTOP*/
+    .mobile {
+        display: none;
+    }
+
+    /* SHOW DESKTOP ELEMENTS */
+    .desktop {
+        display: block;
+    }
+
+    /* GENERAL */
+    h2 {
+        font-size: 8rem;
+    }
+
+    h3 {
+        font-size: 4.4rem;
+    }
+
+    h4 {
+        font-size: 3rem;
+    }
+
+    p {
+        font-size: 2.4rem;
+    }
+
+    .container {
+        position: relative;
+        /* z-index: 1; */
+    }
+
+    .anchor {
+        font-size: 3rem;
+        padding: 1rem;
+        width: 60vw;
+    }
+
+    .anchor:hover {
+        opacity: 0.9;
+    }
+
+
+    /* ******************** */
+    /* ******NAVBAR ******  */
+    /* ******************** */
+    .navbar {
+        padding: var(--default-margin);
+    }
+
+    .navbar .logo .circle {
+        width: var(--logo-circle-size);
+        height: var(--logo-circle-size);
+    }
+
+    .navbar .logo p {
+        font-size: var(--logo-text-size);
+    }
+
+
+    nav .desktop {
+        list-style: none;
+        text-align: right;
+        display: flex;
+        justify-content: space-between;
+
+    }
+
+    nav .desktop a {
+        text-decoration: none;
+        color: var(--secondary);
+        font-size: var(--logo-text-size);
+        padding: 1rem 0;
+
+    }
+
+    nav .desktop a:hover {
+        transform: scale(1.2);
+        color: var(--primary);
+        border-bottom: 1px solid var(--primary);
+    }
+
+
+    /* ******************** */
+    /* ******LANDING ****** */
+    /* ******************** */
+
+    /* CHANGED WAVE TO DESKTOP VERSION */
+    .landing-mobile-waves {
+        background-image: url("./images/layered-waves-haikei.svg");
+    }
+
+    .spacer {
+        aspect-ratio: 4/3;
+    }
+
+    /* Get in Touch button */
+    .landing .anchor {
+        bottom: 6%;
+        /* Undo Postion absolute for get in touch */
+        position: static;
+        background-color: var(--secondary);
+        color: var(--light);
+        display: block;
+        width: 100%;
+        padding: 1rem 0;
+    }
+
+    /* INCREASE "FULL STACK DEVELOPER" TEXT SIZE */
+    .landing-text h3 {
+        font-size: 4rem;
+        font-weight: 300;
+    }
+
+    /* ADDING RIGHT SIDE ICONS TO DESKTOP VERSION */
+    .landing .container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .landing-text {
+        width: auto;
+    }
+
+    .landing-content .social {
+        display: flex;
+        justify-content: flex-end;
+        /* width: 50vw; */
+    }
+
+    .landing-content .social i {
+        font-size: 8rem;
+        margin: 6rem 5rem;
+        color: var(--secondary);
+    }
+
+    .landing-content .social .fa-github {
+        margin-right: 0;
+    }
+
+    .landing-content .social .fa-linkedin {
+        margin-left: 0;
+    }
+
+
+    /* ******************** */
+    /* ******* ABOUT ****** */
+    /* ******************** */
+
+
+    /* ******************** */
+    /* ***** WORK ********* */
+    /* ******************** */
+
+
+    /* ******************** */
+    /* ***** CONTACT ****** */
+    /* ******************** */
+
+
+    /* ******************** */
+    /* ****** FOOTER ****** */
+    /* ******************** */
+
 }

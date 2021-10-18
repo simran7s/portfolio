@@ -34,8 +34,43 @@ function Work() {
 
 
     // Called when ALL/VANILLA/NODE/REACT are clicked. Then filter is set
-    function onClick(filter) {
-        setFilter(filter);
+    function onClick(newFilter) {
+        switch (filter) {
+            case "all":
+                document.querySelector(".work-nav-item.all").classList.remove("active")
+                break;
+            case "vanilla":
+                document.querySelector(".work-nav-item.vanilla").classList.remove("active")
+                break;
+            case "node":
+                document.querySelector(".work-nav-item.node").classList.remove("active")
+                break;
+            case "react":
+                document.querySelector(".work-nav-item.react").classList.remove("active")
+                break;
+            default:
+                break;
+        }
+        switch (newFilter) {
+            case "all":
+                document.querySelector(".work-nav-item.all").classList.add("active")
+                break;
+            case "vanilla":
+                document.querySelector(".work-nav-item.vanilla").classList.add("active")
+                break;
+            case "node":
+                document.querySelector(".work-nav-item.node").classList.add("active")
+                break;
+            case "react":
+                document.querySelector(".work-nav-item.react").classList.add("active")
+                break;
+            default:
+                break;
+        }
+        // Change style of old filter 
+        // document.querySelector(`${newFilter}`).classList.add("active")
+        // Change style of new filter
+        setFilter(newFilter);
     }
 
     return (
@@ -47,19 +82,19 @@ function Work() {
                 <div className="divider"></div>
                 <h3 id="work-scrollpoint">Projects</h3>
                 <ul className="work-nav">
-                    <li className="work-nav-item"
+                    <li className="work-nav-item all active"
                         onClick={() => {
                             onClick("all")
                         }}>All</li>
-                    <li className="work-nav-item"
+                    <li className="work-nav-item vanilla"
                         onClick={() => {
                             onClick("vanilla")
                         }}>HTML/CSS/JS</li>
-                    <li className="work-nav-item"
+                    <li className="work-nav-item node"
                         onClick={() => {
                             onClick("node")
                         }}>Node.js</li>
-                    <li className="work-nav-item"
+                    <li className="work-nav-item react"
                         onClick={() => {
                             onClick("react")
                         }}>React</li>

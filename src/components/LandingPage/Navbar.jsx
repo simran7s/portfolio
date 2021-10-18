@@ -8,10 +8,12 @@ function Navbar() {
         overlay.classList.toggle("active")
     }
 
+    // Used to change colour of nav when going past landing
+    // && only show nav when scrolling up. 
 
-
-    // change colour of nav bar when scrolling past landing page
+    var prevScrollpos = window.pageYOffset;
     window.onscroll = function () {
+        var currentScrollPos = window.pageYOffset;
         const navbar = document.querySelector(".navbar");
         let top = window.scrollY;
         if (top > (window.innerHeight * 0.8)) {
@@ -19,20 +21,46 @@ function Navbar() {
         } else {
             navbar.classList.remove("active")
         }
+        if (prevScrollpos > currentScrollPos) {
+            document.querySelector(".navbar").style.top = "0";
+        } else {
+            document.querySelector(".navbar").style.top = "-150px";
+        }
+        prevScrollpos = currentScrollPos;
+    }
+
+    // Set width of icons and nav to same size
+    window.onload = function () {
+        var nav = document.querySelector(".desktop");
+        var socialIcons = document.querySelector(".landing-social");
+        let style = window.getComputedStyle(socialIcons);
+        let width = style.getPropertyValue("width")
+        nav.style.width = width;
     }
 
     return (
         <>
             <div className="navbar">
                 <header>
-                    <div className="logo">
+                    <div className="logo" onClick={
+                        () => {
+                            window.location.href = "#home"
+                        }
+                    }>
                         <div className="circle"><p>SIM</p></div>
                     </div>
 
                 </header>
 
                 <nav>
-                    <i className="fas fa-bars" onClick={toggleOverlay}></i>
+                    <div className="desktop">
+                        <a id="about-anchor" href="#about">ABOUT</a>
+                        <a id="work-anchor" href="#work-scrollpoint">WORK</a>
+                        <a id="contact-anchor" href="#contact-scrollpoint">CONTACT</a>
+                    </div>
+                    <div className="mobile">
+                        <i className="fas fa-bars" onClick={toggleOverlay}></i>
+                    </div>
                 </nav>
             </div>
             <div className="overlay">
