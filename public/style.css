@@ -654,16 +654,18 @@ p {
         width: 60vw;
     }
 
-    .anchor:hover {
-        opacity: 0.9;
-    }
-
 
     /* ******************** */
     /* ******NAVBAR ******  */
     /* ******************** */
     .navbar {
         padding: var(--default-margin);
+    }
+
+    .navbar .logo:hover .circle {
+        background-color: var(--primary);
+        cursor: pointer;
+        transform: scale(1.1);
     }
 
     .navbar .logo .circle {
@@ -673,6 +675,14 @@ p {
 
     .navbar .logo p {
         font-size: var(--logo-text-size);
+    }
+
+    .navbar.active .desktop a {
+        color: var(--light);
+    }
+
+    .navbar.active .desktop a:hover {
+        color: var(--primary);
     }
 
 
@@ -724,6 +734,12 @@ p {
         padding: 1rem 0;
     }
 
+    .landing .anchor:hover {
+        /* box-shadow: 3px 3px 20px var(--primary); */
+        transform: scale(1.1);
+    }
+
+
     /* INCREASE "FULL STACK DEVELOPER" TEXT SIZE */
     .landing-text h3 {
         font-size: 4rem;
@@ -753,6 +769,12 @@ p {
         color: var(--secondary);
     }
 
+    .landing-content .social i:hover {
+        color: var(--primary);
+        transform: scale(1.2);
+        cursor: pointer;
+    }
+
     .landing-content .social .fa-github {
         margin-right: 0;
     }
@@ -765,6 +787,77 @@ p {
     /* ******************** */
     /* ******* ABOUT ****** */
     /* ******************** */
+
+
+    #about .container {
+        display: flex;
+    }
+
+    #about .about-general-info {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+    }
+
+    #about h3 {
+        font-size: 6.4rem;
+    }
+
+    #about h4 {
+        font-size: 4.8rem;
+    }
+
+    #about p {
+        font-size: 3.6rem;
+    }
+
+    #about .socials.desktop {
+        display: flex;
+        justify-content: flex-start;
+        align-content: center;
+    }
+
+    #about .socials.desktop i {
+        font-size: 12rem;
+    }
+
+    #about .socials.desktop .fa-github {
+        margin-right: 10rem;
+    }
+
+    .about-skills-info {
+        width: 40%;
+        height: 100%;
+        margin-left: 10%;
+    }
+
+    .about-skills-info h4 {
+        vertical-align: baseline;
+        position: absolute;
+        bottom: 1rem;
+    }
+
+    .about-skills-info .desktop {
+        position: relative;
+    }
+
+    .skills {
+        padding: 1rem 0;
+        display: grid;
+        height: 100%;
+        grid-template-columns: repeat(auto, minmax(50%, 1fr));
+        grid-template-rows: repeat(5, 6rem);
+        align-content: stretch;
+    }
+
+    .skill {
+        padding: 1rem;
+        font-size: 2.4rem;
+    }
+
+
+
+
 
 
     /* ******************** */

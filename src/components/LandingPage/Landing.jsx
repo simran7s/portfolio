@@ -20,14 +20,22 @@ function Landing() {
 
                 <div className="landing-content higher-index">
                     <div className="social landing-social">
-                        <i className="fab fa-linkedin"></i>
-                        <i class="fab fa-codepen"></i>
-                        <i className="fab fa-github"></i>
+                        <a href="https://www.linkedin.com/in/simran-sandhu-0b7434195/" target="_blank" rel="noopener noreferrer">
+                            <i className="fab fa-linkedin"></i>
+                        </a>
+                        <a href="https://codepen.io/simran7s" target="_blank" rel="noopener noreferrer">
+                            <i class="fab fa-codepen"></i>
+
+                        </a>
+                        <a href="https://github.com/simran7s" target="_blank" rel="noopener noreferrer">
+
+                            <i className="fab fa-github"></i>
+                        </a>
                     </div>
                     <div className="get-in-touch">
-                        <a href="#contact-scrollpoint" className="anchor">Get In Touch</a>
+                        <Anchor href="#contact-scrollpoint" text="Get In Touch" />
+                        {/* <a href="#contact-scrollpoint" className="anchor">Get In Touch</a> */}
                     </div>
-                    {/* <Anchor href="#contact-scrollpoint" text="Get In Touch" /> */}
                 </div>
             </div>
             <div className="spacer landing-mobile-waves">

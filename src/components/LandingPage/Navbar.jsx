@@ -1,6 +1,17 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 
 function Navbar() {
+
+    useEffect(() => {
+
+        // Set width of icons and nav to same size
+        var nav = document.querySelector(".desktop");
+        var socialIcons = document.querySelector(".landing-social");
+        let style = window.getComputedStyle(socialIcons);
+        let width = style.getPropertyValue("width")
+        nav.style.width = width;
+
+    }, [])
 
     // Toggle Overlay on and off on click
     function toggleOverlay() {
@@ -24,19 +35,15 @@ function Navbar() {
         if (prevScrollpos > currentScrollPos) {
             document.querySelector(".navbar").style.top = "0";
         } else {
-            document.querySelector(".navbar").style.top = "-150px";
+            document.querySelector(".navbar").style.top = "-200px";
         }
         prevScrollpos = currentScrollPos;
     }
 
-    // Set width of icons and nav to same size
-    window.onload = function () {
-        var nav = document.querySelector(".desktop");
-        var socialIcons = document.querySelector(".landing-social");
-        let style = window.getComputedStyle(socialIcons);
-        let width = style.getPropertyValue("width")
-        nav.style.width = width;
-    }
+
+
+
+
 
     return (
         <>
