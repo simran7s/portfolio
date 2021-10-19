@@ -8,6 +8,8 @@ function Work() {
     const [projects, setProjects] = useState(ProjectInfo.projects);
 
 
+
+
     // Filter the projects when filter is changed
     useEffect(() => {
         let filterProjects = [];
@@ -35,6 +37,7 @@ function Work() {
 
     // Called when ALL/VANILLA/NODE/REACT are clicked. Then filter is set
     function onClick(newFilter) {
+        // Change style of old filter 
         switch (filter) {
             case "all":
                 document.querySelector(".work-nav-item.all").classList.remove("active")
@@ -51,6 +54,7 @@ function Work() {
             default:
                 break;
         }
+        // Change style of new filter
         switch (newFilter) {
             case "all":
                 document.querySelector(".work-nav-item.all").classList.add("active")
@@ -67,9 +71,6 @@ function Work() {
             default:
                 break;
         }
-        // Change style of old filter 
-        // document.querySelector(`${newFilter}`).classList.add("active")
-        // Change style of new filter
         setFilter(newFilter);
     }
 

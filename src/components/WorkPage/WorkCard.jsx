@@ -1,10 +1,41 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import Anchor from '../General/Anchor'
 import Skill from './Skill'
 
 function WorkCard(props) {
 
     const { name, desc, img, site_url, code_url, skills } = props
+
+
+    // FOR RUNNING STYLE FUNCTION ON WINDOW RESIZE
+    const [dimensions, setDimensions] = React.useState({
+        width: window.innerWidth,
+        height: window.innerHeight,
+    });
+
+    useEffect(() => {
+        window.addEventListener("resize", handleResize, false);
+    }, []);
+
+
+    useEffect(() => {
+        const menu = document.querySelector(".work-nav")
+        const card = document.querySelector(".work-card")
+        let style = window.getComputedStyle(menu);
+        let width = style.getPropertyValue("width")
+        card.style.width = width;
+
+    }, [dimensions])
+
+
+    const handleResize = () => {
+        setDimensions({
+            width: window.innerWidth,
+            height: window.innerHeight,
+        });
+    }
+
+
 
     return (
         <div className="work-card">
