@@ -14,7 +14,7 @@ function Contact() {
 
                         <div className="contact-links">
                             <a href="https://www.linkedin.com/in/simran-sandhu-0b7434195/" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i> View LinkedIn Profile </a>
-                            <a href="mailto:7simransandhu@gmail.com"><i class="far fa-envelope"></i> Send an Email</a>
+                            <a href="mailto:7simransandhu@gmail.com"><i className="far fa-envelope"></i> Send an Email</a>
                         </div>
                     </div>
 

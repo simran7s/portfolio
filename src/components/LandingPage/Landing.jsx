@@ -23,7 +23,7 @@ function Landing() {
                             <i className="fab fa-linkedin"></i>
                         </a>
                         <a href="https://codepen.io/simran7s" target="_blank" rel="noopener noreferrer">
-                            <i class="fab fa-codepen"></i>
+                            <i className="fab fa-codepen"></i>
 
                         </a>
                         <a href="https://github.com/simran7s" target="_blank" rel="noopener noreferrer">

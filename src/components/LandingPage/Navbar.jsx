@@ -97,7 +97,7 @@ function Navbar() {
                 <a href="#about" onClick={toggleOverlay}>About</a>
                 <a href="#work-scrollpoint" onClick={toggleOverlay}>Projects</a>
                 <a href="#contact-scrollpoint" onClick={toggleOverlay}>Contact</a>
-                <i class="fas fa-times" onClick={toggleOverlay}></i>
+                <i className="fas fa-times" onClick={toggleOverlay}></i>
             </div>
         </>
     )
