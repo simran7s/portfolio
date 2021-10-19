@@ -8,7 +8,7 @@ function WorkCard(props) {
 
 
     // FOR RUNNING STYLE FUNCTION ON WINDOW RESIZE
-    const [dimensions, setDimensions] = React.useState({
+    const [dimensions, setDimensions] = useState({
         width: window.innerWidth,
         height: window.innerHeight,
     });
@@ -21,9 +21,22 @@ function WorkCard(props) {
     useEffect(() => {
         const menu = document.querySelector(".work-nav")
         const card = document.querySelector(".work-card")
+        const grid = document.querySelector(".word-card-grid")
         let style = window.getComputedStyle(menu);
         let width = style.getPropertyValue("width")
-        card.style.width = width;
+
+        card.style.width = "auto";
+        grid.style.width = "auto";
+        // If Phone
+        if (dimensions.width < 768) {
+            console.log(dimensions.width)
+            card.style.width = width;
+        }
+        // If Tablet or Laptop 
+        else {
+            grid.style.width = width;
+        }
+
 
     }, [dimensions])
 
@@ -48,15 +61,15 @@ function WorkCard(props) {
             </div>
 
             <div className="card-middle">
-                <div className="middle-grid">
-                    <h4>Skills Used:</h4>
-                    <div className="work-links">
-                        {/* <Anchor href={site_url} text="View Site" /> */}
-                        {/* <Anchor href={code_url} text="View Code" /> */}
-                        <Anchor href={site_url} text={<i class="fas fa-external-link-alt"></i>} />
-                        <Anchor href={code_url} text={<i class="fab fa-github"></i>} />
-                    </div>
+
+                <h4>Skills Used:</h4>
+                <div className="work-links">
+                    {/* <Anchor href={site_url} text="View Site" /> */}
+                    {/* <Anchor href={code_url} text="View Code" /> */}
+                    <Anchor href={site_url} text={<i className="fas fa-external-link-alt"></i>} />
+                    <Anchor href={code_url} text={<i className="fab fa-github"></i>} />
                 </div>
+
             </div>
 
             <div className="card-skills">

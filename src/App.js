@@ -36,7 +36,10 @@ function App() {
       <About />
       <Work />
       <Contact />
-      <Footer />
+      <div className="mobile">
+        <Footer />
+
+      </div>
     </div>
   );
 }

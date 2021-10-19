@@ -2,17 +2,17 @@ import React, { useEffect } from 'react'
 
 function Skill(props) {
 
-    // useEffect(() => {
-    //     const skill1 = document.querySelector(".skill")
-    //     const skills = document.querySelectorAll(".skill")
-    //     let style = window.getComputedStyle(skill1)
-    //     let height = style.getPropertyValue("height");
-    //     skills.forEach((skill) => {
-    //         skill.style.height = height;
-    //     })
+    useEffect(() => {
+        const skill1 = document.querySelector(".skill")
+        const skills = document.querySelectorAll(".skill")
+        let style = window.getComputedStyle(skill1)
+        let height = style.getPropertyValue("height");
+        skills.forEach((skill) => {
+            skill.style.height = height;
+        })
 
 
-    // }, [])
+    }, [])
 
 
     return (

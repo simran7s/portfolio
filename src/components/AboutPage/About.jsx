@@ -1,11 +1,19 @@
-import React, { useEffect } from 'react'
+import React, { useState, useEffect } from 'react'
 import SkillCapsule from './SkillCapsule'
 
 function About() {
+    // FOR RUNNING STYLE FUNCTION ON WINDOW RESIZE
+    const [dimensions, setDimensions] = useState({
+        width: window.innerWidth,
+        height: window.innerHeight,
+    });
+
+    useEffect(() => {
+        window.addEventListener("resize", handleResize, false);
+    }, []);
 
 
     useEffect(() => {
-
         // // Make h3 and h4 have same height (about and skills)
         const skills = document.querySelector(".about-skills-info .desktop")
         const aboutTitle = document.querySelector(".about-general-info h3")
@@ -13,7 +21,15 @@ function About() {
         let height = style.getPropertyValue("height")
         skills.style.height = height;
 
-    }, [])
+    }, [dimensions])
+
+
+    const handleResize = () => {
+        setDimensions({
+            width: window.innerWidth,
+            height: window.innerHeight,
+        });
+    }
 
 
     return (

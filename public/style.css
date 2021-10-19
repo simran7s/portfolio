@@ -8,7 +8,7 @@
 
     --default-padding: 10vh 14vw;
     --default-margin: 10vh 14vw;
-    --default-mobile-padding: 7% 15%;
+    --default-mobile-padding: 7% 7vw;
     --default-mobile-margin: 5vh 7vw;
 
     --logo-circle-size: 8rem;
@@ -83,9 +83,16 @@ p {
 
 
 /* HIDE DESKTOP ELEMENTS ON MOBILE*/
+
+.higher-index {
+    position: relative;
+    z-index: 1;
+}
+
 .desktop {
     display: none;
 }
+
 
 
 
@@ -120,7 +127,7 @@ p {
     align-items: center;
     padding: var(--default-mobile-margin);
     padding-bottom: none;
-    transition: all 0.5s ease;
+    transition: 0.5s ease;
 }
 
 
@@ -331,6 +338,10 @@ p {
     align-items: center;
 }
 
+/* .desktop {
+    display: none;
+} */
+
 .socials i {
     margin: 2rem 0;
     font-size: 6rem;
@@ -421,7 +432,7 @@ p {
 
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 5fr 1fr 4fr;
+    grid-template-rows: 2fr 1fr 2fr;
     gap: 10px;
 
     grid-template-areas: "info picture"
@@ -430,10 +441,6 @@ p {
     box-sizing: border-box;
 }
 
-.work-card {
-    font-size: 2.3vw;
-    font-size: smaller;
-}
 
 .card-info {
     grid-area: info;
@@ -464,17 +471,18 @@ p {
 
 .card-middle {
     grid-area: mid;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.middle-grid {
-    display: grid;
-    grid-template-columns: 50% 50%;
-    padding: 0px 5px;
-}
-
-.middle-grid h4 {
+.card-middle h4 {
     font-size: 4.5vw;
     margin: auto 0;
+}
+
+.card-middle a {
+    width: auto;
 }
 
 .work-links a i {
@@ -483,7 +491,6 @@ p {
 
 .card-skills {
     grid-area: skills;
-
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(30%, 45%));
     gap: 10px;
@@ -491,12 +498,11 @@ p {
 }
 
 .card-skill {
-    /* background-color: var(--primary); */
     border: 1px solid var(--primary);
     border-radius: 15px;
     text-align: center;
     padding: 0.5rem 1rem;
-    font-size: 2.5vw;
+    /* font-size: 2.5vw; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -513,11 +519,9 @@ p {
 }
 
 .work-links {
+    width: 50%;
     display: flex;
-    gap: 5px;
-    /* justify-content: space-evenly; */
-    /* align-items: center; */
-    /* grid-template-columns: 50% 50%; */
+    justify-content: space-evenly;
 }
 
 .work-links a {
@@ -560,7 +564,7 @@ p {
     height: 25vh;
 }
 
-#contact a {
+#contact .contact-links a {
     display: block;
     box-sizing: border-box;
     text-decoration: none;
@@ -600,11 +604,7 @@ p {
     height: 4rem;
 }
 
-#footer .socials a i {
-    color: var(--secondary);
-    font-size: 4rem;
 
-}
 
 #footer .copyright {
     text-align: center;
@@ -623,10 +623,7 @@ p {
         overflow-y: overlay
     }
 
-    .higher-index {
-        position: relative;
-        z-index: 1;
-    }
+
 
     .container {
         margin: var(--default-margin);
@@ -707,7 +704,6 @@ p {
         text-align: right;
         display: flex;
         justify-content: space-between;
-
     }
 
     nav .desktop a {
@@ -715,7 +711,6 @@ p {
         color: var(--secondary);
         font-size: var(--logo-text-size);
         padding: 1rem 0;
-
     }
 
     nav .desktop a:hover {
@@ -824,18 +819,26 @@ p {
     }
 
     #about p {
-        font-size: 3.6rem;
+        font-size: 3rem;
     }
 
     #about .socials.desktop {
         display: flex;
         justify-content: flex-start;
-        align-content: center;
+        align-items: flex-end;
+        height: 100%;
+        margin-top: auto;
     }
 
     #about .socials.desktop i {
         font-size: 12rem;
     }
+
+    #about .socials.desktop i:hover {
+        color: var(--primary);
+        transform: scale(1.2);
+    }
+
 
     #about .socials.desktop .fa-github {
         margin-right: 10rem;
@@ -867,8 +870,9 @@ p {
     }
 
     .skill {
-        padding: 1rem;
-        font-size: 2.4rem;
+        /* width: 80%; */
+        padding: 0.5rem;
+        font-size: 2rem;
     }
 
 
@@ -884,7 +888,7 @@ p {
 
     .word-card-grid {
         display: grid;
-        grid-template-columns: repeat(3, minmax(300px, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(45%, 1fr));
         gap: 2rem;
     }
 
@@ -904,10 +908,46 @@ p {
 
     /* Card */
     .work-card {
-        aspect-ratio: 1/1;
+        /* aspect-ratio: 1/1; */
         height: auto;
-        font-size: 0.7vw;
         gap: 1rem;
+        font-size: 0.5vw;
+        border-radius: 50px;
+        border-radius: 15px;
+        border-radius: 15px;
+        background: #3F5768;
+        box-shadow: 2px 2px 8px #394e5e,
+            -2px -2px 8px #456072;
+    }
+
+    /* Card Title */
+    .card-info h3 {
+        font-size: 1.3vw;
+    }
+
+    /* Card Desc */
+    .card-info p {
+        font-size: 0.7vw;
+    }
+
+    /* Skills used */
+    .card-middle h4 {
+        font-size: 1.5vw;
+    }
+
+    /* Github/Site Icons */
+    .work-links a i {
+        font-size: 1.5vw;
+    }
+
+    .work-links a i:hover {
+        font-size: 1.5vw;
+        color: var(--primary);
+        transform: scale(1.2);
+    }
+
+    .card-skill p {
+        font-size: 0.7vw;
     }
 
     /* ******************** */
@@ -918,10 +958,159 @@ p {
         background-image: url("./images/work2contactTransitionWave-Desktop3x2.svg");
     }
 
+    #contact .gap {
+        height: 25vh;
+    }
 
+    #contact .contents {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: min-content;
+    }
+
+    #contact .contents .contact-text {
+        width: 50%;
+    }
+
+    #contact .contents .contact-text p {
+        font-weight: 200;
+        font-size: 4rem;
+    }
+
+    #contact .contents .contact-links {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: auto;
+    }
+
+    #contact .contents .contact-links a {
+        width: 70%;
+        text-align: center;
+        font-size: 3rem;
+    }
+
+    #contact .contents .contact-links a:hover {
+        transform: scale(1.1);
+    }
+
+    #contact-scrollpoint {
+        padding-left: 1rem;
+        border-left: 20px solid var(--primary);
+        /* border-radius: 15px 0 0 0; */
+    }
+
+    .contents {
+        padding-left: 1rem;
+        border-left: 20px solid var(--primary);
+        /* border-radius: 0 0 0 15px; */
+    }
 
     /* ******************** */
     /* ****** FOOTER ****** */
     /* ******************** */
 
+    #footer {
+        position: static;
+        margin: 10vh;
+    }
+
+    .contact-wave {
+        /* overflow: hidden; */
+        /* height: min-content; */
+    }
+
+    #footer .socials a i {
+        color: var(--secondary);
+        font-size: 4rem;
+    }
+
+
+    #footer .copyright {
+        margin-top: 1rem;
+        text-align: center;
+        font-size: 2.5rem;
+    }
+
+    #footer .creator {
+        text-align: center;
+        font-size: 3.5rem;
+    }
+
+
+
+    #footer .socials a i:hover {
+        transform: scale(1.2);
+        color: var(--primary);
+    }
 }
+
+
+/* For Smaller and Longer Phones (iPhone 8Plus and Older*/
+@media only screen and (max-height: 736px) {
+    .landing-text {
+        height: 50vh;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .landing-content.desktop {
+        display: none;
+    }
+
+    .spacer .mobile {
+        display: block;
+        position: absolute;
+        bottom: 20vh;
+        left: 0;
+        right: 0;
+        margin: auto;
+        width: 40%;
+    }
+
+    .socials.desktop {
+        display: none;
+    }
+
+    nav .mobile {
+        display: block;
+    }
+
+    nav .desktop {
+        display: none;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 1050px) {
+    .landing-content.desktop {
+        display: block;
+    }
+
+    .spacer .mobile {
+        display: none;
+    }
+
+    nav .mobile {
+        display: none;
+    }
+
+    nav .desktop {
+        display: flex;
+    }
+}
+
+/* laptops and desktops*/
+@media only screen and (min-width: 1200px) {
+    .word-card-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(30%, 1fr));
+        gap: 2rem;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {}

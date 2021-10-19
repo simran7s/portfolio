@@ -6,19 +6,18 @@ function Landing() {
 
     return (
         <div className="landing" id="home">
-
             <Navbar />
             <div className="container">
 
                 <div className="landing-text">
-                    <h2 className="mobile">Hi.</h2>
-                    <h2 className="mobile">I'm</h2>
+                    <h2 className="mobile  higher-index">Hi.</h2>
+                    <h2 className="mobile  higher-index">I'm</h2>
                     <h2 className="desktop higher-index">Hi I'm</h2>
                     <h2 className="higher-index">Simran.</h2>
                     <h3 className="higher-index">A Full Stack Developer.</h3>
                 </div>
 
-                <div className="landing-content higher-index">
+                <div className="desktop landing-content higher-index">
                     <div className="social landing-social">
                         <a href="https://www.linkedin.com/in/simran-sandhu-0b7434195/" target="_blank" rel="noopener noreferrer">
                             <i className="fab fa-linkedin"></i>

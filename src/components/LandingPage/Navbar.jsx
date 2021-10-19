@@ -1,9 +1,21 @@
-import React, { useEffect } from 'react'
+import React, { useState, useEffect } from 'react'
 
 function Navbar() {
 
-    useEffect(() => {
 
+
+    // FOR RUNNING STYLE FUNCTION ON WINDOW RESIZE
+    const [dimensions, setDimensions] = useState({
+        width: window.innerWidth,
+        height: window.innerHeight,
+    });
+
+    useEffect(() => {
+        window.addEventListener("resize", handleResize, false);
+    }, []);
+
+
+    useEffect(() => {
         // Set width of icons and nav to same size
         var nav = document.querySelector(".desktop");
         var socialIcons = document.querySelector(".landing-social");
@@ -11,7 +23,17 @@ function Navbar() {
         let width = style.getPropertyValue("width")
         nav.style.width = width;
 
-    }, [])
+    }, [dimensions])
+
+
+    const handleResize = () => {
+        setDimensions({
+            width: window.innerWidth,
+            height: window.innerHeight,
+        });
+    }
+
+
 
     // Toggle Overlay on and off on click
     function toggleOverlay() {
