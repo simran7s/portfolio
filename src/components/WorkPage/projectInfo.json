@@ -3,7 +3,7 @@
     {
       "name": "Pokedex",
       "desc": "A Pokedex app created using the PokeAPI.",
-      "img": "./workImages/PokedexMockup.png",
+      "img": "pokedex",
       "site_url": "https://pokemon-pokemon.netlify.app/",
       "code_url": "https://github.com/simran7s/Pokedex-react",
       "skills": {
@@ -23,7 +23,7 @@
     {
       "name": "Secrets App",
       "desc": "An app where you can anonymously post your secret for everyone to see.",
-      "img": "./workImages/PokedexMockup.png",
+      "img": "secret",
       "site_url": "https://arcane-wildwood-95606.herokuapp.com/",
       "code_url": "https://github.com/simran7s/SecretsApp",
       "skills": {
@@ -43,7 +43,7 @@
     {
       "name": "Github Finder",
       "desc": "A Github Profile Finder Applicaton that uses the Github API",
-      "img": "./workImages/PokedexMockup.png",
+      "img": "github",
       "site_url": "https://g1thubf1nder.netlify.app/",
       "code_url": "https://github.com/simran7s/GithubFinder",
       "skills": {
@@ -63,7 +63,7 @@
     {
       "name": "Blog Website",
       "desc": "Just a blog website with a backend",
-      "img": "./workImages/PokedexMockup.png",
+      "img": "blog",
       "site_url": "https://frozen-journey-02026.herokuapp.com/",
       "code_url": "https://github.com/simran7s/BlogWebsite",
       "skills": {
@@ -83,7 +83,7 @@
     {
       "name": "Repeat Game",
       "desc": "Copy the pattern game.",
-      "img": "./workImages/PokedexMockup.png",
+      "img": "repeat",
       "site_url": "https://simran7s.github.io/RepeatAfterMeGame/",
       "code_url": "https://github.com/simran7s/RepeatAfterMeGame/",
       "skills": {
@@ -103,7 +103,7 @@
     {
       "name": "TinDog",
       "desc": "If humans can find love online, why can't dogs?",
-      "img": "./workImages/PokedexMockup.png",
+      "img": "tindog",
       "site_url": "https://simran7s.github.io/Tinder-Dog-Version/",
       "code_url": "https://github.com/simran7s/Tinder-Dog-Version",
       "skills": {
@@ -123,7 +123,7 @@
     {
       "name": "TodoList",
       "desc": "Got something to do? Put it on the list. Finish that task? Then just delete it",
-      "img": "./workImages/PokedexMockup.png",
+      "img": "todo",
       "site_url": "https://fathomless-crag-38423.herokuapp.com/",
       "code_url": "https://github.com/simran7s/todolist-v2",
       "skills": {

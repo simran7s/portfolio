@@ -2,6 +2,11 @@ import React, { useState, useEffect } from 'react'
 import Anchor from '../General/Anchor'
 import Skill from './Skill'
 
+
+
+
+
+
 function WorkCard(props) {
 
     const { name, desc, img, site_url, code_url, skills } = props
@@ -56,9 +61,12 @@ function WorkCard(props) {
                 <h3>{name}</h3>
                 <p>{desc}</p>
             </div>
-            <div className="card-picture">
-                {/* <img src="PokedexMockup.png" alt="website" /> */}
-
+            <div >
+                {/* <img class="card-picture" src={require("./MockUps/PokedexMockup.png")} alt="website" /> */}
+                {/* <img class="card-picture" src={picture} alt="website" /> */}
+                {/* <img src={`${img}`} alt="project" /> */}
+                <img className="card-picture" src={img} alt="project" />
+                {/* <img class="image" alt="Image" /> */}
             </div>
 
             <div className="card-middle">

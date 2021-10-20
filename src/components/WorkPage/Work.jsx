@@ -1,11 +1,12 @@
 import React, { useState, useEffect } from 'react'
 import WorkCard from './WorkCard'
-import ProjectInfo from './projectInfo.json'
+// import ProjectInfo from './projectInfo.json'
+import { Projects } from './projectInfo';
 
 function Work() {
 
     const [filter, setFilter] = useState("all");
-    const [projects, setProjects] = useState(ProjectInfo.projects);
+    const [projects, setProjects] = useState(Projects);
 
 
 
@@ -14,20 +15,20 @@ function Work() {
     useEffect(() => {
         let filterProjects = [];
         if (filter === "all") {
-            setProjects(ProjectInfo.projects)
+            setProjects(Projects)
         } else if (filter === "vanilla") {
-            filterProjects = ProjectInfo.projects.filter((project) => {
+            filterProjects = Projects.filter((project) => {
                 return project.search_filter.vanilla === true;
             });
             setProjects(filterProjects)
         } else if (filter === "node") {
-            filterProjects = ProjectInfo.projects.filter((project) => {
+            filterProjects = Projects.filter((project) => {
                 return project.search_filter.node === true;
             });
             setProjects(filterProjects)
         } else {
             // REACT
-            filterProjects = ProjectInfo.projects.filter((project) => {
+            filterProjects = Projects.filter((project) => {
                 return project.search_filter.react === true;
             });
             setProjects(filterProjects)
