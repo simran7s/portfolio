@@ -482,6 +482,14 @@ p {
     grid-area: picture;
     border-radius: 15px;
     aspect-ratio: 1/1;
+    /* background-repeat: no-repeat; */
+    /* background-position: center; */
+    /* background-size: cover; */
+    /* width: 100%; */
+    /* background: url("../src/components/WorkPage/MockUps/PokedexMockup.png") no-repeat; */
+
+
+
 }
 
 .card-info p {

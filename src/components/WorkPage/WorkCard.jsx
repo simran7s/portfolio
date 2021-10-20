@@ -57,6 +57,7 @@ function WorkCard(props) {
                 <p>{desc}</p>
             </div>
             <div className="card-picture">
+                {/* <img src="PokedexMockup.png" alt="website" /> */}
 
             </div>
 
@@ -66,8 +67,10 @@ function WorkCard(props) {
                 <div className="work-links">
                     {/* <Anchor href={site_url} text="View Site" /> */}
                     {/* <Anchor href={code_url} text="View Code" /> */}
-                    <Anchor href={site_url} text={<i className="fas fa-external-link-alt"></i>} />
-                    <Anchor href={code_url} text={<i className="fab fa-github"></i>} />
+                    <a href={site_url} target="_blank" rel="noopener noreferrer"><i className="fas fa-external-link-alt"></i></a>
+                    <a href={code_url} target="_blank" rel="noopener noreferrer"><i className="fab fa-github"></i></a>
+                    {/* <Anchor href={site_url} text={} /> */}
+                    {/* <Anchor href={code_url} text={<i className="fab fa-github"></i>} /> */}
                 </div>
 
             </div>
