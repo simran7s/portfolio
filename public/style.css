@@ -73,7 +73,7 @@ p {
     color: var(--dark);
     border-radius: 15px;
     text-align: center;
-    width: 60vw;
+    /* width: 60vw; */
 }
 
 
@@ -237,7 +237,7 @@ p {
     align-items: flex-start;
     width: 100%;
     height: 70vh;
-    color: var(--dark);
+    color: var(--secondary);
 }
 
 .landing-text h3 {
@@ -246,6 +246,10 @@ p {
     position: relative;
     top: 5px;
 
+}
+
+.landing-text .bold {
+    font-weight: 600;
 }
 
 /* WAVES */
@@ -279,6 +283,33 @@ p {
     bottom: 15%;
     text-align: center;
     width: 60vw;
+}
+
+
+/* COOL EFFECTS */
+/* CSS FROM https://ui-snippets.dev/ */
+.landing .pulse a {
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.1);
+    animation: pulseDesktop 1.75s infinite cubic-bezier(0.66, 0, 0, 1);
+}
+
+@keyframes pulseDesktop {
+    to {
+        box-shadow: 0 0 0 25px rgba(0, 0, 0, 0.0);
+        /* box-shadow: 0 0 0 20px rgba(0, 0, 0, ); */
+    }
+}
+
+
+.landing .mobile a {
+    box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.1);
+    animation: pulseMobile 1.75s infinite cubic-bezier(0.66, 0, 0, 1);
+}
+
+@keyframes pulseMobile {
+    to {
+        box-shadow: 0 0 0 20px rgba(255, 255, 255, 0);
+    }
 }
 
 
@@ -322,7 +353,7 @@ p {
     background-color: var(--primary);
     justify-content: center;
     align-items: center;
-    padding: 0.7rem;
+    padding: 0.7rem 1rem;
     border-radius: 15px;
     box-sizing: border-box;
 }
@@ -365,7 +396,7 @@ p {
     width: 100vw;
     color: var(--light);
     position: relative;
-
+    padding-bottom: 2rem;
 
     height: calc(100% + 15rem);
 }
@@ -432,7 +463,7 @@ p {
 
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 2fr 1fr 2fr;
+    /* grid-template-rows: 2fr 1fr 2fr; */
     gap: 10px;
 
     grid-template-areas: "info picture"
@@ -450,7 +481,7 @@ p {
     background-color: #C4C4C4;
     grid-area: picture;
     border-radius: 15px;
-    /* aspect-ratio: 1/1; */
+    aspect-ratio: 1/1;
 }
 
 .card-info p {
@@ -541,6 +572,7 @@ p {
 .word-card-grid {
     display: grid;
     grid-template-columns: repeat(auto, 1fr);
+
 }
 
 /* ************************************************** */
@@ -551,7 +583,8 @@ p {
 }
 
 .contact-wave {
-    background-image: url("./images/work2contactTransitionWave-Mobile3x4.svg");
+    background-image: url("./images/work2contactTransitionWave-Desktop3x2.svg");
+    aspect-ratio: 9/1;
 }
 
 
@@ -560,9 +593,6 @@ p {
 }
 
 /* Spacing so that content does not go under wave */
-#contact .gap {
-    height: 25vh;
-}
 
 #contact .contact-links a {
     display: block;
@@ -573,7 +603,7 @@ p {
     padding: 0.5rem 1rem;
     width: 100%;
     font-family: inherit;
-    font-size: 2rem;
+    font-size: 1.6rem;
     border-radius: 15px;
     margin: 2rem 0;
     text-align: left;
@@ -597,14 +627,23 @@ p {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+
+}
+
+#footer .socials {
+    margin-bottom: 0;
 }
 
 #footer .socials a {
     text-decoration: none;
-    height: 4rem;
+    color: var(--secondary);
+    margin-bottom: 0;
+    height: fit-content;
 }
 
-
+#footer .socials a i {
+    font-size: 4rem;
+}
 
 #footer .copyright {
     text-align: center;
@@ -619,12 +658,6 @@ p {
 
 /* Laptops and Computers */
 @media only screen and (min-width: 768px) {
-    html {
-        overflow-y: overlay
-    }
-
-
-
     .container {
         margin: var(--default-margin);
     }
@@ -673,6 +706,8 @@ p {
     /* ******************** */
     .navbar {
         padding: var(--default-margin);
+        background-color: var(--light);
+        z-index: 2;
     }
 
     .navbar .logo:hover .circle {
@@ -692,6 +727,7 @@ p {
 
     .navbar.active .desktop a {
         color: var(--light);
+        z-index: 2
     }
 
     .navbar.active .desktop a:hover {
@@ -750,10 +786,13 @@ p {
         transform: scale(1.1);
     }
 
+    .landing-text h2 {
+        font-size: 6rem;
+    }
 
     /* INCREASE "FULL STACK DEVELOPER" TEXT SIZE */
     .landing-text h3 {
-        font-size: 4rem;
+        font-size: 3rem;
         font-weight: 300;
     }
 
@@ -794,7 +833,6 @@ p {
         margin-left: 0;
     }
 
-
     /* ******************** */
     /* ******* ABOUT ****** */
     /* ******************** */
@@ -811,15 +849,15 @@ p {
     }
 
     #about h3 {
-        font-size: 6.4rem;
+        font-size: 5rem;
     }
 
     #about h4 {
-        font-size: 4.8rem;
+        font-size: 4rem;
     }
 
     #about p {
-        font-size: 3rem;
+        font-size: 2.5rem;
     }
 
     #about .socials.desktop {
@@ -872,7 +910,7 @@ p {
     .skill {
         /* width: 80%; */
         padding: 0.5rem;
-        font-size: 2rem;
+        font-size: 1.5rem;
     }
 
 
@@ -906,7 +944,10 @@ p {
         cursor: pointer;
     }
 
-    /* Card */
+
+    /* ******************** */
+    /* ***** PROJECT CARDS ****** */
+    /* ******************** */
     .work-card {
         /* aspect-ratio: 1/1; */
         height: auto;
@@ -916,38 +957,36 @@ p {
         border-radius: 15px;
         border-radius: 15px;
         background: #3F5768;
-        box-shadow: 2px 2px 8px #394e5e,
-            -2px -2px 8px #456072;
+        /* box-shadow: 2px 2px 8px #394e5e,-2px -2px 8px #456072; */
     }
 
     /* Card Title */
     .card-info h3 {
-        font-size: 1.3vw;
+        font-size: 1.3rem;
     }
 
     /* Card Desc */
     .card-info p {
-        font-size: 0.7vw;
+        font-size: 1rem;
     }
 
     /* Skills used */
     .card-middle h4 {
-        font-size: 1.5vw;
+        font-size: 1.1rem;
     }
 
     /* Github/Site Icons */
     .work-links a i {
-        font-size: 1.5vw;
+        font-size: 1.3rem;
     }
 
     .work-links a i:hover {
-        font-size: 1.5vw;
         color: var(--primary);
         transform: scale(1.2);
     }
 
     .card-skill p {
-        font-size: 0.7vw;
+        font-size: 1rem;
     }
 
     /* ******************** */
@@ -958,38 +997,12 @@ p {
         background-image: url("./images/work2contactTransitionWave-Desktop3x2.svg");
     }
 
-    #contact .gap {
-        height: 25vh;
-    }
-
-    #contact .contents {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        height: min-content;
-    }
-
-    #contact .contents .contact-text {
-        width: 50%;
-    }
-
-    #contact .contents .contact-text p {
-        font-weight: 200;
-        font-size: 4rem;
-    }
-
-    #contact .contents .contact-links {
-        width: 50%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin-bottom: auto;
+    .contact-text p {
+        font-size: 2.5rem;
     }
 
     #contact .contents .contact-links a {
-        width: 70%;
         text-align: center;
-        font-size: 3rem;
     }
 
     #contact .contents .contact-links a:hover {
@@ -1008,18 +1021,25 @@ p {
         /* border-radius: 0 0 0 15px; */
     }
 
+    .contact-links .top-link {
+        margin-top: 0;
+    }
+
     /* ******************** */
     /* ****** FOOTER ****** */
     /* ******************** */
 
     #footer {
         position: static;
+        bottom: 15px;
         margin: 10vh;
     }
+
 
     .contact-wave {
         /* overflow: hidden; */
         /* height: min-content; */
+        aspect-ratio: 9/2;
     }
 
     #footer .socials a i {
@@ -1061,6 +1081,10 @@ p {
         display: none;
     }
 
+    #contact .mobile {
+        display: none;
+    }
+
     .spacer .mobile {
         display: block;
         position: absolute;
@@ -1084,8 +1108,59 @@ p {
     }
 }
 
+@media only screen and (min-width: 992px) {
+
+    /* LANDING TEXT */
+    .landing-text h2 {
+        font-size: 7rem;
+
+    }
+
+    /* INCREASE "FULL STACK DEVELOPER" TEXT SIZE */
+    .landing-text h3 {
+        font-size: 4rem;
+    }
+
+    .landing .landing-social i {
+        font-size: 6rem;
+    }
+
+    .landing .get-in-touch a {
+        font-size: 3rem;
+    }
+
+
+    /* CARD */
+    /* Card Title */
+    .card-info h3 {
+        font-size: 1.6rem;
+    }
+
+    /* Card Desc */
+    .card-info p {
+        font-size: 1.3rem;
+    }
+
+    /* Skills used */
+    .card-middle h4 {
+        font-size: 1.5rem;
+    }
+
+    /* Github/Site Icons */
+    .work-links a i {
+        font-size: 2rem;
+    }
+
+    .card-skill p {
+        font-size: 1.3rem;
+    }
+
+}
+
 /* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 1050px) {
+@media only screen and (min-width: 1100px) {
+
+    /* LANDING WAVE */
     .landing-content.desktop {
         display: block;
     }
@@ -1094,6 +1169,7 @@ p {
         display: none;
     }
 
+    /* NAV */
     nav .mobile {
         display: none;
     }
@@ -1101,7 +1177,76 @@ p {
     nav .desktop {
         display: flex;
     }
+
+
+
+    /* CONTACT PAGE */
+    #contact .contents {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: min-content;
+    }
+
+    #contact .contents .contact-text {
+        width: 50%;
+    }
+
+    #contact .contents .contact-text p {
+        font-weight: 200;
+        font-size: 3rem;
+    }
+
+    #contact .contents .contact-links {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        margin-bottom: auto;
+    }
+
+    #contact .contents .contact-links a {
+        width: 70%;
+        text-align: center;
+        font-size: 2rem;
+        margin-top: 0;
+        margin-bottom: 2rem;
+    }
+
 }
+
+
+@media only screen and (min-width: 1300px) {
+    .work-card {
+        /* grid-template-rows: 4fr 1fr 4fr; */
+    }
+
+    /* CARD */
+    /* Card Title */
+    .card-info h3 {
+        font-size: 1.9rem;
+    }
+
+    /* Card Desc */
+    .card-info p {
+        font-size: 1.3rem;
+    }
+
+    /* Skills used */
+    .card-middle h4 {
+        font-size: 2rem;
+    }
+
+    /* Github/Site Icons */
+    .work-links a i {
+        font-size: 1.8rem;
+    }
+
+    .card-skill p {
+        font-size: 1.3rem;
+    }
+}
+
 
 /* laptops and desktops*/
 @media only screen and (min-width: 1200px) {
@@ -1112,5 +1257,38 @@ p {
     }
 }
 
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {}
+/* 4k DISPLAYS */
+@media only screen and (min-width: 2560px) {
+
+    @media only screen and (min-width: 1300px) {
+        .work-card {
+            /* grid-template-rows: 6fr 1fr 4fr; */
+        }
+
+        /* CARD */
+        /* Card Title */
+        .card-info h3 {
+            font-size: 3rem;
+        }
+
+        /* Card Desc */
+        .card-info p {
+            font-size: 2rem;
+        }
+
+        /* Skills used */
+        .card-middle h4 {
+            font-size: 2.5rem;
+        }
+
+        /* Github/Site Icons */
+        .work-links a i {
+            font-size: 2.5rem;
+        }
+
+        .card-skill p {
+            font-size: 2rem;
+        }
+    }
+
+}
