@@ -258,7 +258,7 @@ p {
     background-size: cover;
     aspect-ratio: 3/4;
     width: 100%;
-    transition: all 200ms ease;
+    transition: all 200ms ease-in-out;
 }
 
 .landing-mobile-waves {
@@ -1497,4 +1497,36 @@ p {
         }
     }
 
+}
+
+
+/* LAND SCAPE MODE */
+@media (max-height: 425px) and (orientation: landscape) {
+    .landing-mobile-waves {
+        background-image: url("./images/layered-waves-haikei.svg");
+    }
+
+    .landing .mobile a {
+        position: absolute;
+        bottom: 2rem;
+    }
+
+    .landing-text h2 {
+        font-size: 4rem;
+    }
+
+    .landing-text h3 {
+        display: none;
+    }
+
+    .landing-text {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .landing-text {
+        height: 80vh;
+    }
 }
