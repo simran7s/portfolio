@@ -127,7 +127,8 @@ p {
     align-items: center;
     padding: var(--default-mobile-margin);
     padding-bottom: none;
-    transition: 0.5s ease;
+    transition: 200ms ease;
+    /* transition: transform 200ms ease-in-out; */
 }
 
 
@@ -161,8 +162,6 @@ p {
     padding-top: 1rem;
     padding-bottom: 1rem;
     box-shadow: 0 3px 20px rgba(--dark, );
-    /* transition: all 0.2s ease-in; */
-
 }
 
 .navbar.active .circle {
@@ -259,6 +258,7 @@ p {
     background-size: cover;
     aspect-ratio: 3/4;
     width: 100%;
+    transition: all 200ms ease;
 }
 
 .landing-mobile-waves {

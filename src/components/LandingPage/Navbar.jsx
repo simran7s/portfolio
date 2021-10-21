@@ -100,7 +100,7 @@ function Navbar() {
             <div className="overlay">
                 <a href="#home" onClick={toggleOverlay}>Home</a>
                 <a href="#about" onClick={toggleOverlay}>About</a>
-                <a href="#work" onClick={toggleOverlay}>Projects</a>
+                <a href="#projects" onClick={toggleOverlay}>Projects</a>
                 <a href="#contact-me" onClick={toggleOverlay}>Contact</a>
                 <i className="fas fa-times" onClick={toggleOverlay}></i>
             </div>
