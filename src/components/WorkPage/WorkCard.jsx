@@ -1,11 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import Anchor from '../General/Anchor'
 import Skill from './Skill'
-
-
-
-
-
 
 function WorkCard(props) {
 
@@ -34,7 +28,7 @@ function WorkCard(props) {
         grid.style.width = "auto";
         // If Phone
         if (dimensions.width < 768) {
-            console.log(dimensions.width)
+            // console.log(dimensions.width)
             card.style.width = width;
         }
         // If Tablet or Laptop 
@@ -53,8 +47,6 @@ function WorkCard(props) {
         });
     }
 
-
-
     return (
         <div className="work-card">
             <div className="card-info">
@@ -62,23 +54,15 @@ function WorkCard(props) {
                 <p>{desc}</p>
             </div>
             <div >
-                {/* <img class="card-picture" src={require("./MockUps/PokedexMockup.png")} alt="website" /> */}
-                {/* <img class="card-picture" src={picture} alt="website" /> */}
-                {/* <img src={`${img}`} alt="project" /> */}
                 <img className="card-picture" src={img} alt="project" />
-                {/* <img class="image" alt="Image" /> */}
             </div>
 
             <div className="card-middle">
 
                 <h4>Skills Used:</h4>
                 <div className="work-links">
-                    {/* <Anchor href={site_url} text="View Site" /> */}
-                    {/* <Anchor href={code_url} text="View Code" /> */}
-                    <a href={site_url} target="_blank" rel="noopener noreferrer"><i className="fas fa-external-link-alt"></i></a>
-                    <a href={code_url} target="_blank" rel="noopener noreferrer"><i className="fab fa-github"></i></a>
-                    {/* <Anchor href={site_url} text={} /> */}
-                    {/* <Anchor href={code_url} text={<i className="fab fa-github"></i>} /> */}
+                    <a aria-label="linked in" href={site_url} target="_blank" rel="noopener noreferrer"><i className="fas fa-external-link-alt"></i></a>
+                    <a aria-label="github" href={code_url} target="_blank" rel="noopener noreferrer"><i className="fab fa-github"></i></a>
                 </div>
 
             </div>

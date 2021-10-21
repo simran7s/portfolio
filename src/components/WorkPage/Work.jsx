@@ -82,7 +82,7 @@ function Work() {
             </div>
             <div className="container">
                 <div className="divider"></div>
-                <h3 id="work-scrollpoint">Projects</h3>
+                <h3 id="projects">Projects</h3>
                 <ul className="work-nav">
                     <li className="work-nav-item all active"
                         onClick={() => {

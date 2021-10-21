@@ -6,6 +6,7 @@ function Contact() {
             <div className="spacer contact-wave">
 
             </div>
+            <div id="contact-me"></div>
             <div className="mobile">
                 <div className="container">
                     {/* <div className="gap"></div> */}
@@ -16,8 +17,8 @@ function Contact() {
                         </div>
 
                         <div className="contact-links">
-                            <a href="https://www.linkedin.com/in/simran-sandhu-0b7434195/" target="_blank" rel="noopener noreferrer"><i className="fab fa-linkedin"></i> View LinkedIn Profile </a>
-                            <a href="mailto:7simransandhu@gmail.com"><i className="far fa-envelope"></i> Send an Email</a>
+                            <a aria-label="link in" href="https://www.linkedin.com/in/simran-sandhu-0b7434195/" target="_blank" rel="noopener noreferrer"><i className="fab fa-linkedin"></i> View LinkedIn Profile </a>
+                            <a aria-label="email" href="mailto:7simransandhu@gmail.com"><i className="far fa-envelope"></i> Send an Email</a>
                         </div>
                     </div>
 
@@ -37,8 +38,8 @@ function Contact() {
                         </div>
 
                         <div className="contact-links">
-                            <a className="top-link" href="https://www.linkedin.com/in/simran-sandhu-0b7434195/" target="_blank" rel="noopener noreferrer"><i className="fab fa-linkedin"></i> View LinkedIn Profile </a>
-                            <a href="mailto:7simransandhu@gmail.com"><i className="far fa-envelope"></i> Send an Email</a>
+                            <a aria-label="linked in" className="top-link" href="https://www.linkedin.com/in/simran-sandhu-0b7434195/" target="_blank" rel="noopener noreferrer"><i className="fab fa-linkedin"></i> View LinkedIn Profile </a>
+                            <a aria-label="email" href="mailto:7simransandhu@gmail.com"><i className="far fa-envelope"></i> Send an Email</a>
                         </div>
                     </div>
 

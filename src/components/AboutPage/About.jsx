@@ -40,10 +40,10 @@ function About() {
                     <h3>About</h3>
                     <p>A Bachelor’s of Computer Science Graduate from <span id="york">York University</span>. I am a self-taught Full Stack Developer that loves creating beautiful websites and wonderful experiences.</p>
                     <div className="socials desktop">
-                        <a href="https://github.com/simran7s" target="_blank" rel="noopener noreferrer">
+                        <a aria-label="github" href="https://github.com/simran7s" target="_blank" rel="noopener noreferrer">
                             <i className="fab fa-github"></i>
                         </a>
-                        <a href="https://www.linkedin.com/in/simran-sandhu-0b7434195/" target="_blank" rel="noopener noreferrer">
+                        <a aria-label="linked in" href="https://www.linkedin.com/in/simran-sandhu-0b7434195/" target="_blank" rel="noopener noreferrer">
                             <i className="fab fa-linkedin"></i>
                         </a>
                     </div>
@@ -69,10 +69,10 @@ function About() {
                 </div>
 
                 <div className="socials mobile">
-                    <a href="https://github.com/simran7s" target="_blank" rel="noopener noreferrer">
+                    <a aria-label="github" href="https://github.com/simran7s" target="_blank" rel="noopener noreferrer">
                         <i className="fab fa-github"></i>
                     </a>
-                    <a href="https://www.linkedin.com/in/simran-sandhu-0b7434195/" target="_blank" rel="noopener noreferrer">
+                    <a aria-label="linked in" href="https://www.linkedin.com/in/simran-sandhu-0b7434195/" target="_blank" rel="noopener noreferrer">
                         <i className="fab fa-linkedin"></i>
                     </a>
                 </div>

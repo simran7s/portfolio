@@ -84,8 +84,8 @@ function Navbar() {
                 <nav>
                     <div className="desktop">
                         <a id="about-anchor" href="#about">ABOUT</a>
-                        <a id="work-anchor" href="#work-scrollpoint">WORK</a>
-                        <a id="contact-anchor" href="#contact">CONTACT</a>
+                        <a id="work-anchor" href="#projects">PROJECTS</a>
+                        <a id="contact-anchor" href="#contact-me">CONTACT</a>
                     </div>
                     <div className="mobile">
                         <i className="fas fa-bars" onClick={toggleOverlay}></i>
@@ -95,8 +95,8 @@ function Navbar() {
             <div className="overlay">
                 <a href="#home" onClick={toggleOverlay}>Home</a>
                 <a href="#about" onClick={toggleOverlay}>About</a>
-                <a href="#work-scrollpoint" onClick={toggleOverlay}>Projects</a>
-                <a href="#contact" onClick={toggleOverlay}>Contact</a>
+                <a href="#work" onClick={toggleOverlay}>Projects</a>
+                <a href="#contact-me" onClick={toggleOverlay}>Contact</a>
                 <i className="fas fa-times" onClick={toggleOverlay}></i>
             </div>
         </>
