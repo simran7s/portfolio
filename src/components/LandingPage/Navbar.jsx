@@ -35,6 +35,7 @@ function Navbar() {
 
 
 
+
     // Toggle Overlay on and off on click
     function toggleOverlay() {
         const overlay = document.querySelector(".overlay")
@@ -47,6 +48,7 @@ function Navbar() {
     var prevScrollpos = window.pageYOffset;
     window.onscroll = function () {
         var currentScrollPos = window.pageYOffset;
+        console.log(currentScrollPos)
         const navbar = document.querySelector(".navbar");
         let top = window.scrollY;
         if (top > (window.innerHeight * 0.8)) {
@@ -54,15 +56,18 @@ function Navbar() {
         } else {
             navbar.classList.remove("active")
         }
-        if (prevScrollpos > currentScrollPos) {
+
+        //     if(window.pageYOffset < 200) {
+        //     console.log("HERE")
+        // }
+
+        if (prevScrollpos > currentScrollPos || window.pageYOffset < 200) {
             document.querySelector(".navbar").style.top = "0";
         } else {
             document.querySelector(".navbar").style.top = "-200px";
         }
         prevScrollpos = currentScrollPos;
     }
-
-
 
 
 
