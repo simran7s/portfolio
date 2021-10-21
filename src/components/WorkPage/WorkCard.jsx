@@ -3,8 +3,9 @@ import Skill from './Skill'
 
 function WorkCard(props) {
 
-    const { name, desc, img, mini, site_url, code_url, skills } = props
-
+    const { name, desc, mini, site_url, code_url, skills } = props
+    // No longer needs but commented out so we know we have it.
+    // const{ img } = props;
 
     // FOR RUNNING STYLE FUNCTION ON WINDOW RESIZE
     const [dimensions, setDimensions] = useState({

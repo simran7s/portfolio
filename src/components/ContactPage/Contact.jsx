@@ -37,7 +37,7 @@ function Contact() {
                         </div>
 
                         <div className="contact-links">
-                            <a className="reveal reveal-left" aria-label="linked in" className="top-link" href="https://www.linkedin.com/in/simran-sandhu-0b7434195/" target="_blank" rel="noopener noreferrer"><i className="fab fa-linkedin"></i> View LinkedIn Profile </a>
+                            <a className="reveal reveal-left top-link" aria-label="linked in" href="https://www.linkedin.com/in/simran-sandhu-0b7434195/" target="_blank" rel="noopener noreferrer"><i className="fab fa-linkedin"></i> View LinkedIn Profile </a>
                             <a className="reveal reveal-right" aria-label="email" href="mailto:7simransandhu@gmail.com"><i className="far fa-envelope"></i> Send an Email</a>
                         </div>
                     </div>
