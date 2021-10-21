@@ -51,11 +51,17 @@ function WorkCard(props) {
     return (
         <div className="work-card reveal">
             <div className="card-info">
-                <h3>{name}</h3>
+                <a className="work-title-link" href={site_url} target="_blank" rel="noopener noreferrer">
+                    <h3>{name}</h3>
+                </a>
+
+
                 <p>{desc}</p>
             </div>
             <div >
-                <img className="card-picture" src={mini} alt="project" />
+                <a className="work-title-link" href={site_url} target="_blank" rel="noopener noreferrer">
+                    <img className="card-picture" src={mini} alt="project" />
+                </a>
             </div>
 
             <div className="card-middle">

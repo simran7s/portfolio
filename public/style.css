@@ -63,6 +63,9 @@ p {
     font-size: 1.8rem;
 }
 
+a {
+    text-decoration: none;
+}
 
 .anchor {
     background-color: var(--light);
@@ -97,7 +100,7 @@ p {
 /* ANIMATIONS */
 .reveal {
     position: relative;
-    /* overflow-x: hidden !important; */
+    overflow-x: hidden;
     overflow-y: hidden;
 }
 
@@ -594,13 +597,11 @@ p {
 }
 
 .work-nav .work-nav-item.active {
-    transform: scale(1.1);
+    transform: scale(1);
     color: var(--light);
     font-weight: 800;
     background-color: var(--light);
     color: var(--dark);
-
-    /* text-shadow: 1px 1px 5px var(--primary); */
 }
 
 
@@ -642,7 +643,9 @@ p {
 
 }
 
-
+.work-title-link {
+    text-decoration: none;
+}
 
 .card-info p {
     font-size: 3vw;
