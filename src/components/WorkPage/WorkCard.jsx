@@ -3,7 +3,7 @@ import Skill from './Skill'
 
 function WorkCard(props) {
 
-    const { name, desc, img, site_url, code_url, skills } = props
+    const { name, desc, img, mini, site_url, code_url, skills } = props
 
 
     // FOR RUNNING STYLE FUNCTION ON WINDOW RESIZE
@@ -48,13 +48,13 @@ function WorkCard(props) {
     }
 
     return (
-        <div className="work-card">
+        <div className="work-card reveal">
             <div className="card-info">
                 <h3>{name}</h3>
                 <p>{desc}</p>
             </div>
             <div >
-                <img className="card-picture" src={img} alt="project" />
+                <img className="card-picture" src={mini} alt="project" />
             </div>
 
             <div className="card-middle">

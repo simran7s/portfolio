@@ -41,15 +41,15 @@ function About() {
                     <p>A Bachelor’s of Computer Science Graduate from <span id="york">York University</span>. I am a self-taught Full Stack Developer that loves creating beautiful websites and wonderful experiences.</p>
                     <div className="socials desktop">
                         <a aria-label="github" href="https://github.com/simran7s" target="_blank" rel="noopener noreferrer">
-                            <i className="fab fa-github"></i>
+                            <i className="fab fa-github reveal reveal-left"></i>
                         </a>
                         <a aria-label="linked in" href="https://www.linkedin.com/in/simran-sandhu-0b7434195/" target="_blank" rel="noopener noreferrer">
-                            <i className="fab fa-linkedin"></i>
+                            <i className="fab fa-linkedin reveal reveal-right"></i>
                         </a>
                     </div>
                 </div>
 
-                <div className="about-skills-info">
+                <div className="about-skills-info reveal reveal-right">
                     <div className="desktop">
                         <h4>Skills</h4>
                     </div>
@@ -70,10 +70,10 @@ function About() {
 
                 <div className="socials mobile">
                     <a aria-label="github" href="https://github.com/simran7s" target="_blank" rel="noopener noreferrer">
-                        <i className="fab fa-github"></i>
+                        <i className="fab fa-github reveal reveal-left"></i>
                     </a>
                     <a aria-label="linked in" href="https://www.linkedin.com/in/simran-sandhu-0b7434195/" target="_blank" rel="noopener noreferrer">
-                        <i className="fab fa-linkedin"></i>
+                        <i className="fab fa-linkedin reveal reveal-right"></i>
                     </a>
                 </div>
             </div>

@@ -82,8 +82,8 @@ function Work() {
             </div>
             <div className="container">
                 <div className="divider"></div>
-                <h3 id="projects">Projects</h3>
-                <ul className="work-nav">
+                <h3 id="projects" className="reveal reveal-left">Projects</h3>
+                <ul className="work-nav reveal reveal-right">
                     <li className="work-nav-item all active"
                         onClick={() => {
                             onClick("all")
@@ -109,6 +109,7 @@ function Work() {
                             name={project.name}
                             desc={project.desc}
                             img={project.img}
+                            mini={project.mini_img}
                             site_url={project.site_url}
                             code_url={project.code_url}
                             skills={project.skills}

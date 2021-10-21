@@ -94,6 +94,66 @@ p {
 }
 
 
+/* ANIMATIONS */
+.reveal {
+    position: relative;
+    /* overflow-x: hidden !important; */
+    overflow-y: hidden;
+}
+
+.reveal-top {
+    transform: translateY(-50px);
+    opacity: 0.1;
+    transition: all 1s ease;
+}
+
+.reveal-bottom {
+    transform: translateY(50px);
+    opacity: 0.1;
+    transition: all 1s ease;
+}
+
+/* First */
+.work-card:nth-child(3n + 1) {
+    transform: translateX(250px);
+    opacity: 0.1;
+    transition: all 0.5s ease;
+}
+
+/* Second */
+.work-card:nth-child(3n + 2) {
+    transform: translateX(250px);
+    opacity: 0.1;
+    transition: all 0.5s ease;
+    transition-delay: 0.1s;
+}
+
+/* Third */
+.work-card:nth-child(3n + 3) {
+    transform: translateX(250px);
+    opacity: 0.1;
+    transition: all 0.5s ease;
+    transition-delay: 0.2s;
+}
+
+.reveal-left {
+    transform: translateX(-150px);
+    opacity: 0.1;
+    transition: all 1s ease;
+}
+
+.reveal-right {
+    transform: translateX(150px);
+    opacity: 0.1;
+    transition: all 1s ease;
+}
+
+
+.reveal.revealed {
+    transform: translateY(0px);
+    transform: translateX(0px);
+    opacity: 1;
+}
 
 
 /* ****************************** */
@@ -1528,5 +1588,30 @@ p {
 
     .landing-text {
         height: 80vh;
+    }
+}
+
+@media (max-width:915px) {
+    .reveal {
+        position: relative;
+        /* overflow-x: hidden !important; */
+        overflow-y: visible;
+    }
+
+
+    .reveal-top {
+        transform: translateX(-50px);
+        opacity: 0.1;
+        transition: all 1s ease;
+    }
+
+    .reveal-bottom {
+        transform: translateX(50px);
+        opacity: 0.1;
+        transition: all 1s ease;
+    }
+
+    .work-card {
+        transition-delay: 0ms;
     }
 }

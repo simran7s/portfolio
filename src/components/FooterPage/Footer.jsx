@@ -2,7 +2,7 @@ import React from 'react'
 
 function Footer() {
     return (
-        <footer id="footer">
+        <footer id="footer" className="reveal reveal-bottom">
             <div className="socials">
                 <a aria-label="email" href="mailto:7simransandhu@gmail.com">
 

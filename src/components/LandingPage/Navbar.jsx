@@ -1,8 +1,5 @@
 import React, { useState, useEffect } from 'react'
-
 function Navbar() {
-
-
 
     // FOR RUNNING STYLE FUNCTION ON WINDOW RESIZE
     const [dimensions, setDimensions] = useState({
@@ -12,6 +9,8 @@ function Navbar() {
 
     useEffect(() => {
         window.addEventListener("resize", handleResize, false);
+
+
     }, []);
 
 

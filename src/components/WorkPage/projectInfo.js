@@ -1,13 +1,32 @@
 // IMPORT PICTURES
 import blog from "./MockUpsJpg/BlogMockUp.jpg"
+import blogMini from "./MockUpsJpg/Yp0x2m/blog.jpg"
+
 import keydrum from "./MockUpsJpg/DrumMockUp.jpg"
+import keydrumMini from "./MockUpsJpg/Yp0x2m/drum.jpg"
+
 import github from "./MockUpsJpg/GithubMockUp.jpg"
+import githubMini from "./MockUpsJpg/Yp0x2m/github.jpg"
+
 import pokedex from "./MockUpsJpg/PokedexMockup.png"
+import pokedexMini from "./MockUpsJpg/Yp0x2m/pokedex.jpg"
+
 import portfolio from "./MockUpsJpg/Portfolio.jpg"
+import portfolioMini from "./MockUpsJpg/Yp0x2m/portfolio.jpg"
+
 import repeat from "./MockUpsJpg/RepeatMockUp.jpg"
+import repeatMini from "./MockUpsJpg/Yp0x2m/repeat.jpg"
+
 import secrets from "./MockUpsJpg/SecretsMockup.jpg"
+import secretsMini from "./MockUpsJpg/Yp0x2m/secrets.jpg"
+
 import tindog from "./MockUpsJpg/TinDog.jpg"
+import tindogMini from "./MockUpsJpg/Yp0x2m/tindog.jpg"
+
 import todo from "./MockUpsJpg/TodoMockUp.jpg"
+import todoMini from "./MockUpsJpg/Yp0x2m/todo.jpg"
+
+
 
 
 export const Projects = [
@@ -15,6 +34,7 @@ export const Projects = [
         "name": "Pokedex",
         "desc": "A Pokedex app created using the PokeAPI.",
         "img": pokedex,
+        "mini_img": pokedexMini,
         "site_url": "https://pokemon-pokemon.netlify.app/",
         "code_url": "https://github.com/simran7s/Pokedex-react",
         "skills": {
@@ -35,6 +55,7 @@ export const Projects = [
         "name": "Secrets App",
         "desc": "An app where you can anonymously post your secret for everyone to see.",
         "img": secrets,
+        "mini_img": secretsMini,
         "site_url": "https://arcane-wildwood-95606.herokuapp.com/",
         "code_url": "https://github.com/simran7s/SecretsApp",
         "skills": {
@@ -55,6 +76,7 @@ export const Projects = [
         "name": "Github Finder",
         "desc": "A Github Profile Finder Applicaton that uses the Github API",
         "img": github,
+        "mini_img": githubMini,
         "site_url": "https://g1thubf1nder.netlify.app/",
         "code_url": "https://github.com/simran7s/GithubFinder",
         "skills": {
@@ -75,6 +97,7 @@ export const Projects = [
         "name": "Blog Website",
         "desc": "Just a blog website with a backend",
         "img": blog,
+        "mini_img": blogMini,
         "site_url": "https://frozen-journey-02026.herokuapp.com/",
         "code_url": "https://github.com/simran7s/BlogWebsite",
         "skills": {
@@ -95,6 +118,7 @@ export const Projects = [
         "name": "Repeat Game",
         "desc": "Copy the pattern game.",
         "img": repeat,
+        "mini_img": repeatMini,
         "site_url": "https://simran7s.github.io/RepeatAfterMeGame/",
         "code_url": "https://github.com/simran7s/RepeatAfterMeGame/",
         "skills": {
@@ -115,6 +139,7 @@ export const Projects = [
         "name": "TinDog",
         "desc": "If humans can find love online, why can't dogs?",
         "img": tindog,
+        "mini_img": tindogMini,
         "site_url": "https://simran7s.github.io/Tinder-Dog-Version/",
         "code_url": "https://github.com/simran7s/Tinder-Dog-Version",
         "skills": {
@@ -135,6 +160,7 @@ export const Projects = [
         "name": "TodoList",
         "desc": "Got something to do? Put it on the list. Finish that task? Then just delete it",
         "img": todo,
+        "mini_img": todoMini,
         "site_url": "https://fathomless-crag-38423.herokuapp.com/",
         "code_url": "https://github.com/simran7s/todolist-v2",
         "skills": {
@@ -155,6 +181,7 @@ export const Projects = [
         "name": "KeyDrum",
         "desc": "Have you ever wanted to play the drums ...with your keyboard?",
         "img": keydrum,
+        "mini_img": keydrumMini,
         "site_url": "https://simran7s.github.io/KeyDrum/",
         "code_url": "https://github.com/simran7s/KeyDrum/",
         "skills": {
@@ -175,6 +202,7 @@ export const Projects = [
         "name": "Portfolio",
         "desc": "My Personal Portfolio (the website you are on right now)",
         "img": portfolio,
+        "mini_img": portfolioMini,
         "site_url": "https://google.com",
         "code_url": "https://github.com/simran7s/portfolio",
         "skills": {
