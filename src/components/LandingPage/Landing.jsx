@@ -6,6 +6,7 @@ function Landing() {
 
     return (
         <div className="landing" id="home">
+
             <Navbar />
             <div className="container">
 

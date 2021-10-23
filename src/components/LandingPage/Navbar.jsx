@@ -9,8 +9,6 @@ function Navbar() {
 
     useEffect(() => {
         window.addEventListener("resize", handleResize, false);
-
-
     }, []);
 
 

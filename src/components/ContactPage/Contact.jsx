@@ -12,7 +12,7 @@ function Contact() {
                     <h3 id="contact-scrollpoint" className="reveal reveal-left">Contact</h3>
                     <div className="contents">
                         <div className="contact-text">
-                            <p className="reveal reveal-right">Interested in working together, or need a website? Send me an email or a message on LinkedIn and lets discuss what we can do together.</p>
+                            <p className="reveal reveal-right">Interested in working together, or need a website? Send me an email or a message on LinkedIn and let's discuss what we can do together.</p>
                         </div>
 
                         <div className="contact-links">
@@ -33,7 +33,7 @@ function Contact() {
                     <h3 id="contact-scrollpoint reveal reveal-left">Contact</h3>
                     <div className="contents">
                         <div className="contact-text">
-                            <p className="reveal reveal-right">Interested in working together, or need a website? Send me an email or a message on LinkedIn and lets discuss what we can do together.</p>
+                            <p className="reveal reveal-right">Interested in working together, or need a website? Send me an email or a message on LinkedIn and let's discuss what we can do together.</p>
                         </div>
 
                         <div className="contact-links">
