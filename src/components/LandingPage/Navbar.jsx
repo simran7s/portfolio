@@ -89,6 +89,8 @@ function Navbar() {
                     </div>
                 </nav>
             </div>
+
+            {/* OVERLAY FOR MOBILE MENU */}
             <div className="overlay">
                 <a href="#home" onClick={toggleOverlay}>Home</a>
                 <a href="#about" onClick={toggleOverlay}>About</a>
