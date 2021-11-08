@@ -1,1 +1,1 @@
-This is app was created using React.js. View live on simransandhu.ca
+This is app was created using React.js. View live on www.simransandhu.ca
