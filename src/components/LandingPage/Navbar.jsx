@@ -41,6 +41,13 @@ setTimeout(() => {
         let width = style.getPropertyValue("width")
         nav.style.width = width;
 
+
+           //increase navbar width so that nav is touching far right of container
+    var navbar = document.querySelector(".navbar");
+    var container = document.querySelector(".container");
+    let container_width = window.getComputedStyle(container);
+    navbar.style.width = container_width.getPropertyValue("width")
+
     }, [dimensions])
 
 
