@@ -9,6 +9,27 @@ function Navbar() {
 
     useEffect(() => {
         window.addEventListener("resize", handleResize, false);
+
+        //delay the resizing so that components are all rendered
+setTimeout(() => {
+    var nav = document.querySelector(".desktop");
+    var socialIcons = document.querySelector(".landing-social");
+    let style = window.getComputedStyle(socialIcons);
+    let width = style.getPropertyValue("width");
+    nav.style.width = width;
+
+
+    //increase navbar width so that nav is touching far right of container
+    var navbar = document.querySelector(".navbar");
+    var container = document.querySelector(".container");
+    let container_width = window.getComputedStyle(container);
+    navbar.style.width = container_width.getPropertyValue("width")
+
+
+
+}, 100);
+
+     
     }, []);
 
 

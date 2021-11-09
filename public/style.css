@@ -24,6 +24,7 @@ body {
     overflow-x: hidden;
     background-color: var(--light);
     scroll-behavior: smooth;
+    width: calc(100vw - (100vw - 100%));
 }
 
 * {
