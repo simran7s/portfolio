@@ -1283,6 +1283,10 @@ a {
         border-left: 20px solid var(--primary);
         /* border-radius: 0 0 0 15px; */
     }
+    .contact h3{
+        padding-left: 1rem;
+        border-left: 20px solid var(--primary);
+    }
 
     .contact-links .top-link {
         margin-top: 0;
