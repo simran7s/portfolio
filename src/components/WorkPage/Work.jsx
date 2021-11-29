@@ -84,7 +84,7 @@ function Work() {
                 <div className="divider"></div>
                 <h3 id="projects" className="reveal reveal-left">Projects</h3>
                 <ul className="work-nav reveal reveal-right">
-                    <li aria-label="filter to show all projects" tabindex="0" className="work-nav-item all active"
+                    <li aria-label="filter to show all projects" tabIndex="0" className="work-nav-item all active"
                         onClick={() => {
                             onClick("all")
                         }}
@@ -94,7 +94,7 @@ function Work() {
                                 onClick("all")
                             }
                         }}>All</li>
-                    <li aria-label="filter to show HTML, CSS and JavaScript projects only"  tabindex="0" className="work-nav-item vanilla"
+                    <li aria-label="filter to show HTML, CSS and JavaScript projects only"  tabIndex="0" className="work-nav-item vanilla"
                         onClick={() => {
                             onClick("vanilla")
                         }}
@@ -105,7 +105,7 @@ function Work() {
                             }
                         }}
                         >HTML/CSS/JS</li>
-                    <li aria-label="filter to show Node JS projects only"  tabindex="0" className="work-nav-item node"
+                    <li aria-label="filter to show Node JS projects only"  tabIndex="0" className="work-nav-item node"
                         onClick={() => {
                             onClick("node")
                         }}
@@ -115,7 +115,7 @@ function Work() {
                                 onClick("node")
                             }
                         }}>Node.js</li>
-                    <li aria-label="filter to show React projects only"  tabindex="0" className="work-nav-item react"
+                    <li aria-label="filter to show React projects only"  tabIndex="0" className="work-nav-item react"
                         onClick={() => {
                             onClick("react")
                         }}
