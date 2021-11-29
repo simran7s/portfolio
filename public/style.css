@@ -917,7 +917,7 @@ a {
     }
 
     nav .desktop a:hover {
-        transform: scale(1.2);
+        transform: scale(1.02);
         color: var(--primary);
         border-bottom: 1px solid var(--primary);
     }
