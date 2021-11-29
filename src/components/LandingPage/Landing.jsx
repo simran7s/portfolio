@@ -27,14 +27,14 @@ function Landing() {
 
                 <div className="desktop landing-content higher-index">
                     <div className="social landing-social">
-                        <a aria-label="linked in" href="https://www.linkedin.com/in/simran-sandhu-0b7434195/" target="_blank" rel="noopener noreferrer">
+                        <a aria-label="visit linked in profile" href="https://www.linkedin.com/in/simran-sandhu-0b7434195/" target="_blank" rel="noopener noreferrer">
                             <i className="fab fa-linkedin"></i>
                         </a>
-                        <a aria-label="code pen" href="https://codepen.io/simran7s" target="_blank" rel="noopener noreferrer">
+                        <a aria-label="visit code pen profile" href="https://codepen.io/simran7s" target="_blank" rel="noopener noreferrer">
                             <i className="fab fa-codepen"></i>
 
                         </a>
-                        <a aria-label="github" href="https://github.com/simran7s" target="_blank" rel="noopener noreferrer">
+                        <a aria-label="visit github profile" href="https://github.com/simran7s" target="_blank" rel="noopener noreferrer">
 
                             <i className="fab fa-github"></i>
                         </a>

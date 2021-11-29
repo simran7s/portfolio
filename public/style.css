@@ -163,6 +163,28 @@ a {
 /* ****************************** */
 /* LANDING PAGE */
 /* ****************************** */
+
+
+/* SKIP LINK */
+#skip-link{
+    transform: translateY(-100%);
+    background-color: #000;
+    color: white;
+    font-size: 2rem;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: max-content;
+}
+
+#skip-link:focus{
+    transform: translateY(0);
+    transition: transform 1ms ease-in;
+}
+
+
+
+
 .landing {
     height: 100vh;
     width: 100vw;

@@ -27,6 +27,7 @@ function App() {
 
   return (
     <div className="App">
+      <a id="skip-link" tabIndex="0" href="#first-item">SKIP TO MAIN CONTENT</a>
       <Landing />
       <About />
       <Work />

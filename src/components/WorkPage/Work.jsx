@@ -87,18 +87,43 @@ function Work() {
                     <li aria-label="filter to show all projects" tabindex="0" className="work-nav-item all active"
                         onClick={() => {
                             onClick("all")
+                        }}
+                        onKeyPress={(e)=>{
+                            if(e.key === "Enter"){
+                                e.preventDefault();
+                                onClick("all")
+                            }
                         }}>All</li>
                     <li aria-label="filter to show HTML, CSS and JavaScript projects only"  tabindex="0" className="work-nav-item vanilla"
                         onClick={() => {
                             onClick("vanilla")
-                        }}>HTML/CSS/JS</li>
+                        }}
+                        onKeyPress={(e)=>{
+                            if(e.key === "Enter"){
+                                e.preventDefault();
+                                onClick("vanilla")
+                            }
+                        }}
+                        >HTML/CSS/JS</li>
                     <li aria-label="filter to show Node JS projects only"  tabindex="0" className="work-nav-item node"
                         onClick={() => {
                             onClick("node")
+                        }}
+                        onKeyPress={(e)=>{
+                            if(e.key === "Enter"){
+                                e.preventDefault();
+                                onClick("node")
+                            }
                         }}>Node.js</li>
                     <li aria-label="filter to show React projects only"  tabindex="0" className="work-nav-item react"
                         onClick={() => {
                             onClick("react")
+                        }}
+                        onKeyPress={(e)=>{
+                            if(e.key === "Enter"){
+                                e.preventDefault();
+                                onClick("react")
+                            }
                         }}>React</li>
                 </ul>
                 <div className="word-card-grid">
