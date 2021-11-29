@@ -51,7 +51,7 @@ function WorkCard(props) {
     return (
         <div className="work-card reveal">
             <div className="card-info">
-                <a className="work-title-link" href={site_url} target="_blank" rel="noopener noreferrer">
+                <a aria-label="view site" className="work-title-link" href={site_url} target="_blank" rel="noopener noreferrer">
                     <h3>{name}</h3>
                 </a>
 
@@ -59,8 +59,8 @@ function WorkCard(props) {
                 <p>{desc}</p>
             </div>
             <div >
-                <a className="work-title-link" href={site_url} target="_blank" rel="noopener noreferrer">
-                    <img className="card-picture" src={mini} alt="project" />
+                <a aria-label="view site" className="work-title-link" href={site_url} target="_blank" rel="noopener noreferrer">
+                    <img className="card-picture" src={mini} alt="mock up of project" />
                 </a>
             </div>
 
@@ -68,8 +68,8 @@ function WorkCard(props) {
 
                 <h4>Skills Used:</h4>
                 <div className="work-links">
-                    <a aria-label="linked in" href={site_url} target="_blank" rel="noopener noreferrer"><i className="fas fa-external-link-alt"></i></a>
-                    <a aria-label="github" href={code_url} target="_blank" rel="noopener noreferrer"><i className="fab fa-github"></i></a>
+                    <a aria-label="View Site" href={site_url} target="_blank" rel="noopener noreferrer"><i className="fas fa-external-link-alt"></i></a>
+                    <a aria-label="View GitHub Repo" href={code_url} target="_blank" rel="noopener noreferrer"><i className="fab fa-github"></i></a>
                 </div>
 
             </div>

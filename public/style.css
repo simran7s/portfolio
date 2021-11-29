@@ -1300,7 +1300,7 @@ a {
     #footer {
         position: static;
         bottom: 15px;
-        margin: 10vh;
+        margin: 10vh 0 0 0;
     }
 
 
@@ -1492,10 +1492,6 @@ a {
 
 
 @media only screen and (min-width: 1300px) {
-    .work-card {
-        /* grid-template-rows: 4fr 1fr 4fr; */
-    }
-
     /* CARD */
     /* Card Title */
     .card-info h3 {
@@ -1536,10 +1532,6 @@ a {
 @media only screen and (min-width: 2560px) {
 
     @media only screen and (min-width: 1300px) {
-        .work-card {
-            /* grid-template-rows: 6fr 1fr 4fr; */
-        }
-
         /* CARD */
         /* Card Title */
         .card-info h3 {
